@@ -1,0 +1,16 @@
+2025-05-28 00:27:40 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 00:27:42 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-28 00:27:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 01:07:56 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 01:07:58 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-28 01:07:58 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

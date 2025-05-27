@@ -13,8 +13,8 @@ const { initializeSocket } = require('./socket');
 // Import routes
 const apiRoutes = require('./routes');
 const { errorHandler } = require('./middlewares/error.middleware');
+const app = require('./app'); // Import app from app.js
 
-const app = express();
 const server = http.createServer(app);
 
 // Initialize Socket.IO
@@ -90,25 +90,25 @@ createTerminus(server, {
   logger: (msg, err) => logger.error({ err }, msg)
 });
 
-// Connect to MongoDB and start server
-const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/code-review';
-
-mongoose
-  .connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    logger.info('Connected to MongoDB');
-    server.listen(PORT, () => {
-      logger.info(`Server running on port ${PORT}`);
+// Connect to MongoDB and start server unless in test
+if (process.env.NODE_ENV !== 'test') {
+  const PORT = process.env.PORT || 5000;
+  const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/code-review';
+  mongoose
+    .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+      logger.info('Connected to MongoDB');
+      server.listen(PORT, () => {
+        logger.info(`Server running on port ${PORT}`);
+      });
+    })
+    .catch((err) => {
+      logger.error('MongoDB connection error:', err);
+      process.exit(1);
     });
-  })
-  .catch((err) => {
-    logger.error('MongoDB connection error:', err);
-    process.exit(1);
-  });
+} else {
+  // In test mode, don't auto-connect or listen
+}
 
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (err) => {

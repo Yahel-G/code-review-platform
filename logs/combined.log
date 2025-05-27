@@ -1,0 +1,36 @@
+2025-05-28 00:27:40 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:40 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 00:27:40 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:40 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-28 00:27:40 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 00:27:40 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:40 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-28 00:27:41 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:41 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 00:27:41 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:41 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-28 00:27:42 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:42 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 00:27:42 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-28 00:27:42 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:42 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-28 00:27:43 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:43 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 00:27:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 00:27:43 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:21:27:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-28 01:07:53 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:53 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-28 01:07:53 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:53 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-28 01:07:55 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:55 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 01:07:56 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:56 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-28 01:07:56 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 01:07:56 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:56 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-28 01:07:56 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:56 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 01:07:57 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:57 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-28 01:07:57 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:57 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 01:07:58 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-28 01:07:58 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:58 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-28 01:07:58 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:58 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-28 01:07:58 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 01:07:58 [32minfo[39m: ::ffff:127.0.0.1 - - [27/May/2025:22:07:58 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
