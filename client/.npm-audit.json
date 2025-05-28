@@ -1,0 +1,6 @@
+{
+  "auditLevel": "high",
+  "exceptions": [
+    "https://github.com/advisories/GHSA-7fh5-64p2-3v2j"
+  ]
+}
