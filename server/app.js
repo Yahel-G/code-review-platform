@@ -15,7 +15,7 @@ app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
     ? process.env.CLIENT_URL
-    : 'http://localhost:3000',
+    : true,
   credentials: true
 }));
 const limiter = rateLimit({

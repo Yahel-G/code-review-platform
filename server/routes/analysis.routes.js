@@ -14,7 +14,7 @@ router.use(protect);
  * @desc    Analyze code and get feedback
  * @access  Private
  */
-router.post('/analyze', analyzeCode);
+router.post('/', analyzeCode);
 
 /**
  * @route   GET /api/analysis/history

@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, ReactNode, useContext } from 'react';
-import axios from 'axios';
+import api from '../services/api';
 
 interface AuthContextProps {
   user: any;
@@ -30,16 +30,16 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const storedToken = localStorage.getItem('token');
       if (storedToken) {
         setToken(storedToken);
-        axios.defaults.headers.common['Authorization'] = `Bearer ${storedToken}`;
+        api.defaults.headers.common['Authorization'] = `Bearer ${storedToken}`;
         try {
           // fetch user profile
-          const res = await axios.get('/api/auth/me');
+          const res = await api.get('auth/me');
           setUser(res.data.user);
         } catch (error) {
           console.error('Failed to load user', error);
           // Clear invalid token
           localStorage.removeItem('token');
-          delete axios.defaults.headers.common['Authorization'];
+          delete api.defaults.headers.common['Authorization'];
         }
       }
       setLoading(false);
@@ -49,28 +49,28 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   const login = async (email: string, password: string) => {
-    const res = await axios.post('/api/auth/login', { email, password });
+    const res = await api.post('auth/login', { email, password });
     const { token, user } = res.data;
     setToken(token);
     setUser(user);
     localStorage.setItem('token', token);
-    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   };
 
   const register = async (username: string, email: string, password: string) => {
-    const res = await axios.post('/api/auth/register', { username, email, password });
+    const res = await api.post('auth/register', { username, email, password });
     const { token, user } = res.data;
     setToken(token);
     setUser(user);
     localStorage.setItem('token', token);
-    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   };
 
   const logout = () => {
     setToken(null);
     setUser(null);
     localStorage.removeItem('token');
-    delete axios.defaults.headers.common['Authorization'];
+    delete api.defaults.headers.common['Authorization'];
   };
 
   return (

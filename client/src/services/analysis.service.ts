@@ -27,7 +27,7 @@ export interface AnalysisHistoryItem {
   createdAt: string;
 }
 
-const ANALYSIS_ENDPOINT = '/api/analyze';
+const ANALYSIS_ENDPOINT = '/analyze';
 
 /**
  * Analyzes the provided code and returns analysis results
@@ -68,7 +68,7 @@ export const analyzeCode = async (
 
     return response.data;
   } catch (error: any) {
-    console.error('Analysis error:', error);
+    if (typeof process.env.JEST_WORKER_ID === 'undefined') console.error('Analysis error:', error);
     const errorMessage = error.response?.data?.message || 
                        error.message || 
                        'Failed to analyze code. Please try again.';
@@ -92,7 +92,7 @@ export const analyzeCode = async (
   }
 };
 
-const HISTORY_ENDPOINT = '/api/analysis/history';
+const HISTORY_ENDPOINT = '/analyze/history';
 
 /**
  * Fetches the analysis history for the authenticated user
@@ -126,7 +126,7 @@ export const getAnalysisHistory = async (token: string): Promise<AnalysisHistory
       createdAt: item.createdAt || new Date().toISOString(),
     }));
   } catch (error: any) {
-    console.error('Failed to fetch analysis history:', error);
+    if (typeof process.env.JEST_WORKER_ID === 'undefined') console.error('Failed to fetch analysis history:', error);
     // Return empty array instead of throwing to allow the UI to handle it gracefully
     return [];
   }

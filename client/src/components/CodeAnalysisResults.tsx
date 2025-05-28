@@ -32,6 +32,7 @@ interface CodeAnalysisResultsProps {
   loading?: boolean;
   error?: string | null;
   onToggle: () => void;
+  onRetry?: () => void;
 }
 
 const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({

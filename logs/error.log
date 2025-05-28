@@ -14,3 +14,399 @@
 2025-05-28 01:07:58 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
     at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 14:30:13 [31merror[39m: MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+{
+  "reason": {
+    "type": "Unknown",
+    "servers": {},
+    "stale": false,
+    "compatible": true,
+    "heartbeatFrequencyMS": 10000,
+    "localThresholdMS": 15,
+    "setName": null,
+    "maxElectionId": null,
+    "maxSetVersion": null,
+    "commonWireVersion": 0,
+    "logicalSessionTimeoutMinutes": null
+  }
+}
+MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\connection.js:791:11)
+2025-05-28 14:31:15 [31merror[39m: MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+{
+  "reason": {
+    "type": "Unknown",
+    "servers": {},
+    "stale": false,
+    "compatible": true,
+    "heartbeatFrequencyMS": 10000,
+    "localThresholdMS": 15,
+    "setName": null,
+    "maxElectionId": null,
+    "maxSetVersion": null,
+    "commonWireVersion": 0,
+    "logicalSessionTimeoutMinutes": null
+  }
+}
+MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\connection.js:791:11)
+2025-05-28 14:33:26 [31merror[39m: MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+{
+  "reason": {
+    "type": "Unknown",
+    "servers": {},
+    "stale": false,
+    "compatible": true,
+    "heartbeatFrequencyMS": 10000,
+    "localThresholdMS": 15,
+    "setName": null,
+    "maxElectionId": null,
+    "maxSetVersion": null,
+    "commonWireVersion": 0,
+    "logicalSessionTimeoutMinutes": null
+  }
+}
+MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\connection.js:791:11)
+2025-05-28 17:05:26 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::1 - Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 17:11:08 [31merror[39m: 404 - Not Found - /api/api/analyze - /api/api/analyze - POST - ::1 - Stack: Error: Not Found - /api/api/analyze
+    at notFound (C:\Work\Windsurf\code-review-platform\server\middlewares\error.middleware.js:49:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+2025-05-28 17:35:47 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 18:27:51 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 18:27:51 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 18:28:34 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 18:28:34 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 18:28:52 [31merror[39m: 500 - Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError" - /api/reviews - POST - ::1 - Stack: ValidationError: Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError"
+    at Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1464:12)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1119:16)
+    at model.Document (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:165:12)
+    at model.Model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:123:12)
+    at new model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:4758:15)
+    at exports.createReview (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:35:20)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+2025-05-28 18:29:20 [31merror[39m: 500 - Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError" - /api/reviews - POST - ::1 - Stack: ValidationError: Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError"
+    at Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1464:12)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1119:16)
+    at model.Document (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:165:12)
+    at model.Model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:123:12)
+    at new model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:4758:15)
+    at exports.createReview (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:35:20)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+2025-05-28 18:32:26 [31merror[39m: 500 - Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError" - /api/reviews - POST - ::1 - Stack: ValidationError: Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError"
+    at Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1464:12)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1119:16)
+    at model.Document (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:165:12)
+    at model.Model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:123:12)
+    at new model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:4758:15)
+    at exports.createReview (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:35:20)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+2025-05-28 18:32:47 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 18:32:55 [31merror[39m: 500 - Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError" - /api/reviews - POST - ::1 - Stack: ValidationError: Review validation failed: author: Cast to ObjectId failed for value "user_79c33955-6c4f-423f-928e-8fce71616bd0" (type string) at path "author" because of "BSONError"
+    at Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1464:12)
+    at model.$set (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:1119:16)
+    at model.Document (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:165:12)
+    at model.Model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:123:12)
+    at new model (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\model.js:4758:15)
+    at exports.createReview (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:35:20)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+2025-05-28 18:41:48 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 19:14:32 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 19:14:34 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-28 19:14:34 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-28 19:25:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 19:31:04 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 19:31:16 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-28 23:32:00 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 01:45:01 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 01:45:41 [31merror[39m: Authentication error: jwt expired
+2025-05-29 01:45:41 [31merror[39m: 401 - Not authorized - /api/auth/me - GET - ::1 - Stack: Error: Not authorized
+    at authenticate (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:240:10)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+2025-05-29 01:45:41 [31merror[39m: Authentication error: jwt expired
+2025-05-29 01:45:41 [31merror[39m: 401 - Not authorized - /api/auth/me - GET - ::1 - Stack: Error: Not authorized
+    at authenticate (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:240:10)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+2025-05-29 01:45:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 01:54:37 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews/68372ea21ac729e0d47e1899 - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 01:54:37 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews/68372ea21ac729e0d47e1899 - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 01:54:49 [31merror[39m: Authentication error: invalid signature
+2025-05-29 01:54:49 [31merror[39m: 401 - Not authorized - /api/auth/me - GET - ::1 - Stack: Error: Not authorized
+    at authenticate (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:240:10)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+2025-05-29 01:54:49 [31merror[39m: Authentication error: invalid signature
+2025-05-29 01:54:49 [31merror[39m: 401 - Not authorized - /api/auth/me - GET - ::1 - Stack: Error: Not authorized
+    at authenticate (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:240:10)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+2025-05-29 01:54:49 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 01:54:52 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 01:54:57 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 01:55:09 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 01:55:22 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 01:55:29 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 01:55:39 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::1 - Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateRefreshToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:20:14)
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:115:26)
+2025-05-29 02:07:46 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 02:07:51 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::1 - Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateRefreshToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:20:14)
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:115:26)
+2025-05-29 02:09:05 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 02:10:27 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 02:10:36 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - GET - ::1 - Stack: Error: Not authorized, token invalid
+    at exports.protect (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+2025-05-29 02:16:36 [31merror[39m: Authentication error: User not found
+2025-05-29 02:16:36 [31merror[39m: 401 - Not authorized - /api/auth/me - GET - ::1 - Stack: Error: Not authorized
+    at authenticate (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:240:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 02:16:36 [31merror[39m: Authentication error: User not found
+2025-05-29 02:16:36 [31merror[39m: 401 - Not authorized - /api/auth/me - GET - ::1 - Stack: Error: Not authorized
+    at authenticate (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:240:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 02:16:55 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)

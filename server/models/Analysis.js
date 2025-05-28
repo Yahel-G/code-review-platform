@@ -52,11 +52,11 @@ const metricsSchema = new mongoose.Schema({
 
 const analysisSchema = new mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User',
-      required: true,
-      index: true
+    user: { 
+      type: String, 
+      ref: 'User', 
+      required: true, 
+      index: true 
     },
     language: {
       type: String,
