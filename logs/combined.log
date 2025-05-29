@@ -853,3 +853,1091 @@ MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUS
 2025-05-29 02:24:25 [32minfo[39m: Server running on port 5000
 2025-05-29 02:24:25 [32minfo[39m: Client connected: 2_Q51A3jgQtby9LzAAAC
 2025-05-29 02:24:25 [32minfo[39m: Client connected: mjxSEDQMEtrGgiojAAAD
+2025-05-29 02:24:40 [32minfo[39m: Connected to MongoDB
+2025-05-29 02:24:40 [32minfo[39m: Server running on port 5000
+2025-05-29 02:24:40 [32minfo[39m: Client connected: 0dooEn40uOLUZANPAAAC
+2025-05-29 02:24:40 [32minfo[39m: Client connected: _A3m8Jb4VxdKoiawAAAD
+2025-05-29 02:27:40 [32minfo[39m: ::1 - - [28/May/2025:23:27:40 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:30:18 [32minfo[39m: ::1 - - [28/May/2025:23:30:18 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:30:42 [32minfo[39m: Client disconnected: 0dooEn40uOLUZANPAAAC
+2025-05-29 02:30:52 [32minfo[39m: ::1 - - [28/May/2025:23:30:52 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:30:52 [32minfo[39m: ::1 - - [28/May/2025:23:30:52 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:30:52 [32minfo[39m: Client connected: 36UT-UGRJ4eYGe50AAAG
+2025-05-29 02:30:53 [32minfo[39m: ::1 - - [28/May/2025:23:30:53 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:33:26 [32minfo[39m: ::1 - - [28/May/2025:23:33:26 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:33:31 [32minfo[39m: Client disconnected: 36UT-UGRJ4eYGe50AAAG
+2025-05-29 02:33:42 [32minfo[39m: ::1 - - [28/May/2025:23:33:42 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:33:42 [32minfo[39m: ::1 - - [28/May/2025:23:33:42 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:33:42 [32minfo[39m: Client connected: ZnAEuqP3FJeEktu9AAAJ
+2025-05-29 02:33:42 [32minfo[39m: ::1 - - [28/May/2025:23:33:42 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:34:40 [32minfo[39m: ::1 - - [28/May/2025:23:34:40 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:34:40 [32minfo[39m: ::1 - - [28/May/2025:23:34:40 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:34:50 [32minfo[39m: Client disconnected: ZnAEuqP3FJeEktu9AAAJ
+2025-05-29 02:34:51 [32minfo[39m: ::1 - - [28/May/2025:23:34:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:34:51 [32minfo[39m: ::1 - - [28/May/2025:23:34:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:34:51 [32minfo[39m: Client connected: 5_-M_pqjjPpILYFcAAAM
+2025-05-29 02:34:51 [32minfo[39m: ::1 - - [28/May/2025:23:34:51 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:10 [32minfo[39m: ::1 - - [28/May/2025:23:37:10 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:27 [32minfo[39m: ::1 - - [28/May/2025:23:37:27 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:37:39 [32minfo[39m: Client disconnected: 5_-M_pqjjPpILYFcAAAM
+2025-05-29 02:37:40 [32minfo[39m: ::1 - - [28/May/2025:23:37:40 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:40 [32minfo[39m: Client connected: FtLvBDP7fduSm-TgAAAP
+2025-05-29 02:37:40 [32minfo[39m: ::1 - - [28/May/2025:23:37:40 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:41 [32minfo[39m: ::1 - - [28/May/2025:23:37:41 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:45 [32minfo[39m: ::1 - - [28/May/2025:23:37:45 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:54 [32minfo[39m: Client disconnected: FtLvBDP7fduSm-TgAAAP
+2025-05-29 02:37:55 [32minfo[39m: ::1 - - [28/May/2025:23:37:55 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:55 [32minfo[39m: ::1 - - [28/May/2025:23:37:55 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:37:55 [32minfo[39m: Client connected: 6Gc_SN7YMuBjJGlTAAAS
+2025-05-29 02:37:55 [32minfo[39m: ::1 - - [28/May/2025:23:37:55 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:00 [32minfo[39m: ::1 - - [28/May/2025:23:38:00 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:02 [32minfo[39m: Client disconnected: 6Gc_SN7YMuBjJGlTAAAS
+2025-05-29 02:38:03 [32minfo[39m: ::1 - - [28/May/2025:23:38:03 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:03 [32minfo[39m: ::1 - - [28/May/2025:23:38:03 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:03 [32minfo[39m: Client connected: xayHyVY4xYsoykzmAAAV
+2025-05-29 02:38:03 [32minfo[39m: ::1 - - [28/May/2025:23:38:03 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:06 [32minfo[39m: ::1 - - [28/May/2025:23:38:06 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:25 [32minfo[39m: Client disconnected: xayHyVY4xYsoykzmAAAV
+2025-05-29 02:38:26 [32minfo[39m: ::1 - - [28/May/2025:23:38:26 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:26 [32minfo[39m: ::1 - - [28/May/2025:23:38:26 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:26 [32minfo[39m: Client connected: b6Wl0sFVJ9_f-4WqAAAY
+2025-05-29 02:38:27 [32minfo[39m: ::1 - - [28/May/2025:23:38:27 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:30 [32minfo[39m: ::1 - - [28/May/2025:23:38:30 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:40 [32minfo[39m: ::1 - - [28/May/2025:23:38:40 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:38:50 [32minfo[39m: ::1 - - [28/May/2025:23:38:50 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:39:03 [32minfo[39m: ::1 - - [28/May/2025:23:39:03 +0000] "POST /api/analyze HTTP/1.1" 200 143 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:40:20 [32minfo[39m: ::1 - - [28/May/2025:23:40:20 +0000] "POST /api/analyze HTTP/1.1" 200 143 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:40:28 [32minfo[39m: ::1 - - [28/May/2025:23:40:28 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:42:00 [32minfo[39m: ::1 - - [28/May/2025:23:42:00 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:42:38 [32minfo[39m: ::1 - - [28/May/2025:23:42:38 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:44:19 [32minfo[39m: ::1 - - [28/May/2025:23:44:19 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:45:23 [32minfo[39m: ::1 - - [28/May/2025:23:45:23 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:47:06 [32minfo[39m: Client disconnected: b6Wl0sFVJ9_f-4WqAAAY
+2025-05-29 02:47:07 [32minfo[39m: ::1 - - [28/May/2025:23:47:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:47:07 [32minfo[39m: ::1 - - [28/May/2025:23:47:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:47:07 [32minfo[39m: Client connected: yoiqkz030uxEq053AAAb
+2025-05-29 02:47:07 [32minfo[39m: ::1 - - [28/May/2025:23:47:07 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:47:13 [32minfo[39m: ::1 - - [28/May/2025:23:47:13 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:47:23 [32minfo[39m: ::1 - - [28/May/2025:23:47:23 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:48:50 [32minfo[39m: ::1 - - [28/May/2025:23:48:50 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 02:49:47 [32minfo[39m: Client disconnected: yoiqkz030uxEq053AAAb
+2025-05-29 02:49:48 [32minfo[39m: ::1 - - [28/May/2025:23:49:48 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:49:48 [32minfo[39m: ::1 - - [28/May/2025:23:49:48 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:49:48 [32minfo[39m: Client connected: Sd1mGVMib9Rb06GJAAAe
+2025-05-29 02:49:48 [32minfo[39m: ::1 - - [28/May/2025:23:49:48 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:49:55 [32minfo[39m: ::1 - - [28/May/2025:23:49:55 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:50:22 [32minfo[39m: ::1 - - [28/May/2025:23:50:22 +0000] "POST /api/analyze HTTP/1.1" 200 286 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:50:31 [32minfo[39m: ::1 - - [28/May/2025:23:50:31 +0000] "POST /api/analyze HTTP/1.1" 200 143 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:50:36 [32minfo[39m: ::1 - - [28/May/2025:23:50:36 +0000] "POST /api/analyze HTTP/1.1" 200 143 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:52:50 [32minfo[39m: ::1 - - [28/May/2025:23:52:50 +0000] "POST /api/analyze HTTP/1.1" 200 143 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:52:53 [32minfo[39m: ::1 - - [28/May/2025:23:52:53 +0000] "POST /api/analyze HTTP/1.1" 200 143 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:53:15 [32minfo[39m: Connected to MongoDB
+2025-05-29 02:53:15 [32minfo[39m: Server running on port 5000
+2025-05-29 02:53:16 [32minfo[39m: Client connected: ltHdlnQuhLaoEb1UAAAB
+2025-05-29 02:53:19 [32minfo[39m: Client connected: FZwjfowxkA3j5vIxAAAD
+2025-05-29 02:54:45 [32minfo[39m: Connected to MongoDB
+2025-05-29 02:54:45 [32minfo[39m: Server running on port 5000
+2025-05-29 02:54:47 [32minfo[39m: Client connected: Tm8BzGFoqUdfRfvGAAAB
+2025-05-29 02:54:47 [32minfo[39m: Client connected: MvERIYhF9dZozLVwAAAD
+2025-05-29 02:54:48 [32minfo[39m: Client disconnected: MvERIYhF9dZozLVwAAAD
+2025-05-29 02:54:49 [32minfo[39m: ::1 - - [28/May/2025:23:54:49 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:54:49 [32minfo[39m: ::1 - - [28/May/2025:23:54:49 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:54:49 [32minfo[39m: Client connected: QlU9I3Xe34CoR_eYAAAG
+2025-05-29 02:54:49 [32minfo[39m: ::ffff:127.0.0.1 - - [28/May/2025:23:54:49 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:54:58 [32minfo[39m: ::ffff:127.0.0.1 - - [28/May/2025:23:54:58 +0000] "POST /api/analyze HTTP/1.1" 200 250 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:55:04 [32minfo[39m: ::1 - - [28/May/2025:23:55:04 +0000] "POST /api/analyze HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:55:13 [32minfo[39m: ::1 - - [28/May/2025:23:55:13 +0000] "POST /api/analyze HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:55:19 [32minfo[39m: ::1 - - [28/May/2025:23:55:19 +0000] "POST /api/analyze HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:55:31 [32minfo[39m: ::1 - - [28/May/2025:23:55:31 +0000] "POST /api/analyze HTTP/1.1" 200 429 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 02:56:07 [32minfo[39m: Client disconnected: QlU9I3Xe34CoR_eYAAAG
+2025-05-29 02:56:07 [32minfo[39m: Client disconnected: Tm8BzGFoqUdfRfvGAAAB
+2025-05-29 12:06:35 [32minfo[39m: Client connected: Do87_151aDUetywlAAAJ
+2025-05-29 12:06:35 [32minfo[39m: Client connected: B8hr_rxTDs_MQarJAAAK
+2025-05-29 12:59:10 [32minfo[39m: Client disconnected: Do87_151aDUetywlAAAJ
+2025-05-29 12:59:10 [32minfo[39m: ::1 - - [29/May/2025:09:59:10 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 12:59:10 [32minfo[39m: ::1 - - [29/May/2025:09:59:10 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 12:59:10 [32minfo[39m: Client connected: h06BG6ymcWU1eLwFAAAN
+2025-05-29 12:59:11 [32minfo[39m: ::1 - - [29/May/2025:09:59:11 +0000] "GET /api/reviews HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 12:59:17 [32minfo[39m: ::1 - - [29/May/2025:09:59:17 +0000] "POST /api/analyze HTTP/1.1" 200 429 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 12:59:58 [32minfo[39m: ::1 - - [29/May/2025:09:59:58 +0000] "POST /api/analyze HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 13:00:41 [32minfo[39m: ::1 - - [29/May/2025:10:00:41 +0000] "POST /api/analyze HTTP/1.1" 200 429 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 13:01:12 [32minfo[39m: ::1 - - [29/May/2025:10:01:12 +0000] "POST /api/analyze HTTP/1.1" 200 293 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+2025-05-29 13:03:30 [32minfo[39m: ::1 - - [29/May/2025:10:03:30 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0"
+2025-05-29 13:11:57 [32minfo[39m: Connected to MongoDB
+2025-05-29 13:11:57 [32minfo[39m: Server running on port 5000
+2025-05-29 13:11:58 [32minfo[39m: Client connected: 3RNEp1Qwiq6BEPvAAAAC
+2025-05-29 13:11:58 [32minfo[39m: Client connected: XHiFLiOB4RW3Vvq0AAAD
+2025-05-29 13:14:18 [32minfo[39m: Connected to MongoDB
+2025-05-29 13:14:18 [32minfo[39m: Server running on port 5000
+2025-05-29 13:14:18 [32minfo[39m: Client connected: KIUvZv_UukuFdNLpAAAC
+2025-05-29 13:14:18 [32minfo[39m: Client connected: bcL5oJYfHJW5bMDYAAAD
+2025-05-29 13:15:33 [32minfo[39m: Connected to MongoDB
+2025-05-29 13:15:33 [32minfo[39m: Server running on port 5000
+2025-05-29 13:15:33 [32minfo[39m: Client connected: qMbBEHzlKBVNAiCiAAAC
+2025-05-29 13:15:33 [32minfo[39m: Client connected: 1oMArRh3_RmsLdAoAAAD
+2025-05-29 13:19:09 [32minfo[39m: Connected to MongoDB
+2025-05-29 13:19:09 [32minfo[39m: Server running on port 5000
+2025-05-29 13:19:09 [32minfo[39m: Client connected: 7kQLyUY70cMAXdb8AAAC
+2025-05-29 13:19:09 [32minfo[39m: Client connected: NHNkNQoDgoMNct3GAAAD
+2025-05-29 13:19:52 [32minfo[39m: Connected to MongoDB
+2025-05-29 13:19:52 [32minfo[39m: Server running on port 5000
+2025-05-29 13:19:53 [32minfo[39m: Client connected: PBT06fkMSUTNTSfFAAAC
+2025-05-29 13:19:53 [32minfo[39m: Client connected: z1qSZBPRQyONFYnZAAAD
+2025-05-29 14:14:51 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:14:51 [32minfo[39m: Server running on port 5000
+2025-05-29 14:14:55 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:14:55 [32minfo[39m: Server running on port 5000
+2025-05-29 14:14:55 [32minfo[39m: Client connected: -UNuCX-P0Y8oFy04AAAC
+2025-05-29 14:14:55 [32minfo[39m: Client connected: a-3IdsR3aa2JIW1iAAAD
+2025-05-29 14:15:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:40 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:15:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:41 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 14:15:41 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:15:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:41 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 14:15:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:41 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:15:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:42 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 14:15:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:42 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:15:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:15:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:15:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:43 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:15:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:15:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:15:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:45 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 14:15:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:15:45 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 14:29:44 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:29:44 [32minfo[39m: Server running on port 5000
+2025-05-29 14:29:44 [32minfo[39m: Client connected: IlJ3hIVpkAZ7E0HAAAAC
+2025-05-29 14:29:44 [32minfo[39m: Client connected: vKpAMTXlL3e8XjBQAAAD
+2025-05-29 14:30:49 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:30:49 [32minfo[39m: Server running on port 5000
+2025-05-29 14:30:49 [32minfo[39m: Client connected: kmrNgwQx6SEk9HGCAAAC
+2025-05-29 14:30:49 [32minfo[39m: Client connected: MiX3Zvln3jtqUwS5AAAD
+2025-05-29 14:31:25 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:31:25 [32minfo[39m: Server running on port 5000
+2025-05-29 14:31:26 [32minfo[39m: Client connected: 9y0VJ8AjjoaclBB8AAAC
+2025-05-29 14:31:26 [32minfo[39m: Client connected: 7FCoSstYEPsD-NVgAAAD
+2025-05-29 14:31:29 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:31:29 [32minfo[39m: Server running on port 5000
+2025-05-29 14:31:29 [32minfo[39m: Client connected: ydMKRXYXkfJQtUD2AAAC
+2025-05-29 14:31:29 [32minfo[39m: Client connected: 9BT83v3txwz3fjxmAAAD
+2025-05-29 14:33:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:08 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:33:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:09 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 14:33:09 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:33:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:09 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 14:33:10 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:10 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:33:10 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:10 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 14:33:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:11 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:33:11 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:33:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:11 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:33:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:12 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:33:12 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:33:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:12 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:33:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:13 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 14:33:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:33:13 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 14:34:44 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:34:44 [32minfo[39m: Server running on port 5000
+2025-05-29 14:34:44 [32minfo[39m: Client connected: vxac_J-Hy8DYUl_kAAAB
+2025-05-29 14:34:49 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:34:49 [32minfo[39m: Server running on port 5000
+2025-05-29 14:34:49 [32minfo[39m: Client connected: L4Gd06yOFIAqGyHsAAAB
+2025-05-29 14:34:51 [32minfo[39m: Client connected: ML8UlYQCBer4r4-jAAAD
+2025-05-29 14:37:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:08 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:37:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:09 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 14:37:09 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:37:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:09 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 14:37:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:09 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:37:10 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:10 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 14:37:10 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:10 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:37:11 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:37:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:11 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:37:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:11 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:37:11 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:37:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:11 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:37:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:13 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 14:37:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:37:13 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 14:38:05 [32minfo[39m: Connected to MongoDB
+2025-05-29 14:38:05 [32minfo[39m: Server running on port 5000
+2025-05-29 14:38:07 [32minfo[39m: Client connected: GMu5BToW8Qe2BH0WAAAC
+2025-05-29 14:38:07 [32minfo[39m: Client connected: d1j8_kpgHQC2u5yMAAAD
+2025-05-29 14:38:13 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:38:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:13 +0000] "POST /api/auth/register HTTP/1.1" 500 50 "-" "-"
+2025-05-29 14:38:14 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:114:19)
+2025-05-29 14:38:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:14 +0000] "POST /api/auth/login HTTP/1.1" 500 50 "-" "-"
+2025-05-29 14:38:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:17 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:38:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:17 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 14:38:17 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:38:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:17 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 14:38:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:18 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:38:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:18 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 14:38:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:19 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:38:20 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:38:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:20 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:38:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:20 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:38:20 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:38:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:20 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:38:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:21 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 14:38:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:38:21 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 14:43:57 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:43:57 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:43:57 +0000] "POST /api/auth/register HTTP/1.1" 500 50 "-" "-"
+2025-05-29 14:43:57 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:114:19)
+2025-05-29 14:43:57 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:43:57 +0000] "POST /api/auth/login HTTP/1.1" 500 50 "-" "-"
+2025-05-29 14:44:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:01 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:44:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:01 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 14:44:01 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:44:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:01 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 14:44:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:02 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:44:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:02 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 14:44:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:03 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:44:03 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:44:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:03 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:44:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:04 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:44:04 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:44:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:04 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:44:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:05 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 14:44:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:44:05 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 14:49:41 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:49:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:41 +0000] "POST /api/auth/register HTTP/1.1" 500 50 "-" "-"
+2025-05-29 14:49:41 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:114:19)
+2025-05-29 14:49:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:41 +0000] "POST /api/auth/login HTTP/1.1" 500 50 "-" "-"
+2025-05-29 14:49:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:45 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:49:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:45 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 14:49:45 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:49:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:45 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 14:49:46 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:46 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:49:46 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:46 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 14:49:47 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:47 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:49:47 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:49:47 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:47 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:49:48 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:48 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 14:49:48 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:49:48 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:48 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 14:49:49 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:49 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 14:49:49 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:11:49:49 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 16:05:03 [32minfo[39m: ::1 - - [29/May/2025:13:05:03 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:09:59 [32minfo[39m: ::1 - - [29/May/2025:13:09:59 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:15:28 [32minfo[39m: ::1 - - [29/May/2025:13:15:28 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:50:12 [32minfo[39m: ::1 - - [29/May/2025:13:50:12 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:50:51 [32minfo[39m: ::1 - - [29/May/2025:13:50:51 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:52:57 [32minfo[39m: ::1 - - [29/May/2025:13:52:57 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:53:31 [32minfo[39m: ::1 - - [29/May/2025:13:53:31 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:57:00 [32minfo[39m: ::1 - - [29/May/2025:13:57:00 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 16:58:09 [32minfo[39m: ::1 - - [29/May/2025:13:58:09 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 17:00:18 [32minfo[39m: ::1 - - [29/May/2025:14:00:18 +0000] "GET /api/reviews HTTP/1.1" 200 1515 "http://localhost/" "node.js"
+2025-05-29 17:01:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:01:31 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:01:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:01:31 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:03:40 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:03:40 [32minfo[39m: Server running on port 5000
+2025-05-29 17:03:40 [32minfo[39m: Client connected: NqhiB_ue_PJQbBrfAAAB
+2025-05-29 17:03:41 [32minfo[39m: Client connected: VlN2MSOWvuyEfSgoAAAD
+2025-05-29 17:04:30 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:04:30 [32minfo[39m: Server running on port 5000
+2025-05-29 17:04:30 [32minfo[39m: Client connected: vUVtVDjFmXNIa9i3AAAC
+2025-05-29 17:04:30 [32minfo[39m: Client connected: ow7Xi29xqXQYQ33rAAAD
+2025-05-29 17:05:23 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:05:23 [32minfo[39m: Server running on port 5000
+2025-05-29 17:05:23 [32minfo[39m: Client connected: u2MmRrVsmKyX8oIeAAAC
+2025-05-29 17:05:23 [32minfo[39m: Client connected: krADbZMgyjaTzwz9AAAD
+2025-05-29 17:06:55 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:06:55 [32minfo[39m: Server running on port 5000
+2025-05-29 17:06:56 [32minfo[39m: Client connected: CL4KLkVw3p0pqFF9AAAC
+2025-05-29 17:06:56 [32minfo[39m: Client connected: CLEZ4C84X2Eq21-kAAAD
+2025-05-29 17:09:49 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:09:49 [32minfo[39m: Server running on port 5000
+2025-05-29 17:09:49 [32minfo[39m: Client connected: OVRDtSuI1l-GnY06AAAC
+2025-05-29 17:09:49 [32minfo[39m: Client connected: Rm89X8vyTEwHxu4-AAAD
+2025-05-29 17:10:35 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:10:35 [32minfo[39m: Server running on port 5000
+2025-05-29 17:10:35 [32minfo[39m: Client connected: h8R-HdlO2oo5ues2AAAC
+2025-05-29 17:10:35 [32minfo[39m: Client connected: PcSXI0o-uiyetmxHAAAD
+2025-05-29 17:11:19 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:11:19 [32minfo[39m: Server running on port 5000
+2025-05-29 17:11:19 [32minfo[39m: Client connected: QItAglo_cB9UnuozAAAC
+2025-05-29 17:11:19 [32minfo[39m: Client connected: GWWe5anAGxiGZAsRAAAD
+2025-05-29 17:11:53 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:11:53 [32minfo[39m: Server running on port 5000
+2025-05-29 17:11:53 [32minfo[39m: Client connected: lHUugHxcHDvDQ-YSAAAC
+2025-05-29 17:11:53 [32minfo[39m: Client connected: SnddI0ZtbpBFOP9SAAAD
+2025-05-29 17:14:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:14 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:14:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:14 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:14:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:15 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:15 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:14:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:15 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:14:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:15 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:14:15 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:15 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:14:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:16 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:16 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:14:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:17 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:17 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:14:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:17 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:14:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:18 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:18 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:18 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:14:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:29 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:14:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:30 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:14:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:32 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:32 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:14:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:32 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:14:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:32 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:14:32 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:32 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:14:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:33 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:33 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:14:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:34 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:34 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:14:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:34 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:14:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:35 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:14:35 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:14:35 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:15:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:31 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:15:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:31 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:15:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:33 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:15:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:33 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:15:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:34 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:15:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:34 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:15:34 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:15:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:34 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:15:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:34 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:15:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:35 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:15:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:35 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:15:36 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:15:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:15:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:36 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:15:36 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:15:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:15:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:17:03 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:17:03 [32minfo[39m: Server running on port 5000
+2025-05-29 17:17:03 [32minfo[39m: Client connected: whwrBTorgssx_cQUAAAC
+2025-05-29 17:17:03 [32minfo[39m: Client connected: hyiMizbZBxze88OAAAAD
+2025-05-29 17:19:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:27 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:19:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:27 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:19:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:29 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:19:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:29 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 500 - Review validation failed: analysis.metrics: Path `analysis.metrics` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: analysis.metrics: Path `analysis.metrics` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schema\SubdocumentPath.js:267:14
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 500 94 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:30 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:19:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:31 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:19:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:31 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:19:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:32 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:19:32 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:19:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:32 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:19:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:33 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:19:33 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:19:33 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:20:40 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:20:40 [32minfo[39m: Server running on port 5000
+2025-05-29 17:20:40 [32minfo[39m: Client connected: vp_DM9VZY7hi6ERmAAAC
+2025-05-29 17:20:40 [32minfo[39m: Client connected: kuoDHxx9g5GGmBcWAAAD
+2025-05-29 17:21:11 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:21:11 [32minfo[39m: Server running on port 5000
+2025-05-29 17:21:11 [32minfo[39m: Client connected: yeCk15qetbPIAJQAAAAC
+2025-05-29 17:21:11 [32minfo[39m: Client connected: aYGRiPWs5mucrUOdAAAD
+2025-05-29 17:21:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:37 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:21:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:37 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:21:39 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:39 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:21:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:40 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:21:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:40 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:21:40 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:40 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:21:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:41 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:21:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:42 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:21:42 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:21:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:42 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:21:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:43 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:21:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:21:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:25:59 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:25:59 [32minfo[39m: Server running on port 5000
+2025-05-29 17:25:59 [32minfo[39m: Client connected: y9OGkqyVuJHTcACFAAAC
+2025-05-29 17:25:59 [32minfo[39m: Client connected: JHLKF8Kskbc9a7D-AAAD
+2025-05-29 17:27:07 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:27:07 [32minfo[39m: Server running on port 5000
+2025-05-29 17:27:07 [32minfo[39m: Client connected: uJU7L9DM18uFB21zAAAC
+2025-05-29 17:27:07 [32minfo[39m: Client connected: 8lLAB31bl7VW-oWFAAAD
+2025-05-29 17:27:28 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:27:28 [32minfo[39m: Server running on port 5000
+2025-05-29 17:27:28 [32minfo[39m: Client connected: W0LYI5K1N-CdIwQjAAAC
+2025-05-29 17:27:28 [32minfo[39m: Client connected: 9FF5b0P817fq0BshAAAD
+2025-05-29 17:28:56 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:28:56 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:28:56 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:28:56 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:28:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:28:59 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:28:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:28:59 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:28:59 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:28:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:28:59 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:28:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:28:59 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:00 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:29:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:00 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:00 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 17:29:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:00 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:29:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:01 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:01 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:29:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:01 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:01 +0000] "POST /api/reviews HTTP/1.1" 201 474 "-" "-"
+2025-05-29 17:29:02 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:29:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:02 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:29:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:02 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:02 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:29:02 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:29:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:02 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:29:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:02 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:02 [31merror[39m: 500 - Review validation failed: language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:29:02 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:02 +0000] "POST /api/reviews HTTP/1.1" 500 78 "-" "-"
+2025-05-29 17:29:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:03 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:03 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:03 [31merror[39m: 500 - Review validation failed: language: `text/plain` is not a valid enum value for path `language`., analysis.metrics.complexity: Path `analysis.metrics.complexity` (0) is less than minimum allowed value (1). - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `text/plain` is not a valid enum value for path `language`., analysis.metrics.complexity: Path `analysis.metrics.complexity` (0) is less than minimum allowed value (1).
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:29:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:03 +0000] "POST /api/reviews HTTP/1.1" 500 218 "-" "-"
+2025-05-29 17:29:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:04 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:04 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:04 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:29:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:04 +0000] "POST /api/reviews HTTP/1.1" 500 112 "-" "-"
+2025-05-29 17:29:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:05 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:05 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:05 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:29:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:05 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:29:06 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:06 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:29:06 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:06 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:29:06 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:29:06 +0000] "POST /api/reviews HTTP/1.1" 201 627 "-" "-"
+2025-05-29 17:31:30 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:31:30 [32minfo[39m: Server running on port 5000
+2025-05-29 17:31:30 [32minfo[39m: Client connected: iJSJG2_a5zjdV_uAAAAC
+2025-05-29 17:31:30 [32minfo[39m: Client connected: RQqA_wP0RhFI8tN7AAAD
+2025-05-29 17:31:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:31:59 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:31:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:31:59 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:32:10 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:10 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:32:10 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:10 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:32:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:12 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:32:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:12 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:12 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:12 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:32:12 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:32:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:12 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:32:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:12 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 17:32:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:13 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:32:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:13 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:13 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:32:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:13 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:13 +0000] "POST /api/reviews HTTP/1.1" 201 474 "-" "-"
+2025-05-29 17:32:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:14 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:32:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:14 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:14 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:32:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:14 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:32:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:14 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:14 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 17:32:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:15 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:32:15 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:32:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:15 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:32:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:15 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:15 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:15 [31merror[39m: 500 - Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:32:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:15 +0000] "POST /api/reviews HTTP/1.1" 500 119 "-" "-"
+2025-05-29 17:32:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:16 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:16 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:16 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:32:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:16 +0000] "POST /api/reviews HTTP/1.1" 500 112 "-" "-"
+2025-05-29 17:32:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:17 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:17 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:32:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:17 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:32:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:18 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:32:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:32:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:32:18 +0000] "POST /api/reviews HTTP/1.1" 201 627 "-" "-"
+2025-05-29 17:38:23 [32minfo[39m: Connected to MongoDB
+2025-05-29 17:38:23 [32minfo[39m: Server running on port 5000
+2025-05-29 17:38:23 [32minfo[39m: Client connected: NoT7eNfgkq8I7hhiAAAC
+2025-05-29 17:38:23 [32minfo[39m: Client connected: UiVIM-gZL4R_r66QAAAD
+2025-05-29 17:39:47 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:47 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 17:39:47 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:47 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 17:39:49 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:49 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:39:50 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:50 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:50 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:50 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 17:39:50 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:39:50 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:50 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 17:39:50 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:50 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:50 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:50 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 17:39:50 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:50 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:39:51 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:51 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 17:39:51 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:51 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:51 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:51 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:51 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:51 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:39:51 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:51 +0000] "POST /api/reviews HTTP/1.1" 201 474 "-" "-"
+2025-05-29 17:39:52 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:39:52 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:52 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:39:52 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:52 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:52 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:52 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 17:39:52 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:39:52 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:52 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 17:39:52 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:52 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:52 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:52 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 17:39:53 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:53 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:53 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:53 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:53 [31merror[39m: 500 - Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:39:54 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:54 +0000] "POST /api/reviews HTTP/1.1" 500 119 "-" "-"
+2025-05-29 17:39:54 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:54 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:54 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:54 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:54 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:39:54 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:54 +0000] "POST /api/reviews HTTP/1.1" 500 112 "-" "-"
+2025-05-29 17:39:55 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:55 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:55 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:55 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:55 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:39:56 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:56 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 17:39:56 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:56 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 17:39:57 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:57 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 17:39:57 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:14:39:57 +0000] "POST /api/reviews HTTP/1.1" 201 627 "-" "-"

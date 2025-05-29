@@ -58,16 +58,21 @@ const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({
     );
   }
 
-  // Show error state
-  if (error || !result) {
+  // Show error state only if there was an actual error
+  if (error) {
     return (
       <Paper elevation={2} sx={{ mt: 3, overflow: 'hidden' }}>
         <Alert severity="error" onClick={onToggle} sx={{ cursor: 'pointer' }}>
           <AlertTitle>Analysis Failed</AlertTitle>
-          {error || 'Failed to analyze code. Please try again.'}
+          {error}
         </Alert>
       </Paper>
     );
+  }
+
+  // Don't show anything if there's no result yet
+  if (!result) {
+    return null;
   }
 
   const hasIssues = result.issues.length > 0;

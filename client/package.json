@@ -10,9 +10,6 @@
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.6",
@@ -32,6 +29,8 @@
     "start": "cross-env CI=true PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "start-safe": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "audit:check": "npm audit --production"
@@ -59,20 +58,23 @@
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "babel-jest": "^30.0.0-beta.3",
     "cross-env": "^7.0.3",
+    "identity-obj-proxy": "^3.0.0",
     "postcss": "^8.4.31",
     "resolve-url-loader": "^5.0.0"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "^react-router-dom$": "<rootDir>/src/__mocks__/react-router-dom.ts"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!(axios|react-router-dom)/)"
-    ],
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
-    }
-  }
+"jest": {
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "^react-router-dom$": "<rootDir>/node_modules/react-router-dom"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/(?!(axios|react-router-dom)/)"
+  ]
+}
 }

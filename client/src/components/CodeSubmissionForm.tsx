@@ -23,19 +23,23 @@ import {
   Divider,
 } from '@mui/material';
 import AssessmentIcon from '@mui/icons-material/Assessment';
+import UploadIcon from '@mui/icons-material/Upload';
 import Editor from '@monaco-editor/react';
 import { createReview } from '../services/review.service';
 import { analyzeCode, AnalysisResult } from '../services/analysis.service';
 import { useAuth } from '../context/AuthContext';
 import CodeAnalysisResults from './CodeAnalysisResults';
 
-type Language = 'javascript' | 'typescript' | 'python' | 'csharp';
+type Language = 'javascript' | 'typescript' | 'python' | 'csharp' | 'java' | 'c' | 'cpp';
 
 const languageConfigs = {
   javascript: { label: 'JavaScript', extension: 'js' },
   typescript: { label: 'TypeScript', extension: 'ts' },
   python: { label: 'Python', extension: 'py' },
   csharp: { label: 'C#', extension: 'cs' },
+  java: { label: 'Java', extension: 'java' },
+  c: { label: 'C', extension: 'c' },
+  cpp: { label: 'C++', extension: 'cpp' },
 };
 
 const DEFAULT_CODE = {
@@ -43,6 +47,9 @@ const DEFAULT_CODE = {
   typescript: '// Write your TypeScript code here\nfunction hello(name: string): void {\n  console.log(`Hello, ${name}!`);\n}',
   python: '# Write your Python code here\ndef hello(name):\n    print(f\'Hello, {name}!\')',
   csharp: '// Write your C# code here\nusing System;\n\npublic class Program {\n    public static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}',
+  java: '// Write your Java code here\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}',
+  c: '// Write your C code here\n#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}',
+  cpp: '// Write your C++ code here\n#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}'
 };
 
 const CodeSubmissionForm: React.FC = () => {
@@ -53,15 +60,18 @@ const CodeSubmissionForm: React.FC = () => {
   const [title, setTitle] = useState('');
   const [code, setCode] = useState(DEFAULT_CODE.javascript);
   const [language, setLanguage] = useState<Language>('javascript');
+  const [fileName, setFileName] = useState<string>('');
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [analysisError, setAnalysisError] = useState<string | null>(null);
   const [submitError, setSubmitError] = useState('');
   const [success, setSuccess] = useState(false);
   const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
-  const [showAnalysis, setShowAnalysis] = useState(true);
+  const [showAnalysis, setShowAnalysis] = useState(false); // Start with analysis hidden
   const editorRef = useRef<any>(null);
   const [lastAnalyzedCode, setLastAnalyzedCode] = useState<string | null>(null);
+  const [hasUserInteracted, setHasUserInteracted] = useState(false); // Track if user has interacted with the form
 
   // Update code when language changes
   useEffect(() => {
@@ -73,7 +83,78 @@ const CodeSubmissionForm: React.FC = () => {
   };
 
   const handleEditorChange = (value: string | undefined) => {
-    setCode(value || '');
+    const newValue = value || '';
+    setCode(newValue);
+    handleUserInteraction();
+    // Clear file name when user manually edits the code
+    if (newValue && newValue !== code) {
+      setFileName('');
+    }
+  };
+
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    handleUserInteraction();
+
+    // Check file size (max 1MB)
+    const maxSize = 1024 * 1024; // 1MB
+    if (file.size > maxSize) {
+      setAnalysisError('File size should be less than 1MB');
+      return;
+    }
+
+    // Check file extension
+    const extension = file.name.split('.').pop()?.toLowerCase();
+    const validExtensions = ['js', 'ts', 'py', 'cs', 'jsx', 'tsx', 'java', 'c', 'cpp', 'h', 'hpp'];
+    if (!extension || !validExtensions.includes(extension)) {
+      setAnalysisError('Unsupported file type. Please upload a code file.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const content = e.target?.result as string;
+      setCode(content);
+      setFileName(file.name);
+      
+      // Auto-detect language based on file extension
+      const langMap: Record<string, Language> = {
+        'js': 'javascript',
+        'jsx': 'javascript',
+        'ts': 'typescript',
+        'tsx': 'typescript',
+        'py': 'python',
+        'cs': 'csharp',
+        'java': 'java',
+        'c': 'c',
+        'cpp': 'cpp',
+        'h': 'c',
+        'hpp': 'cpp'
+      } as const;
+      
+      const detectedLang = langMap[extension] as Language | undefined;
+      if (detectedLang) {
+        setLanguage(detectedLang);
+      }
+      
+      setAnalysisError(null);
+    };
+    
+    reader.onerror = () => {
+      setAnalysisError('Error reading file');
+    };
+    
+    reader.readAsText(file);
+    
+    // Reset file input to allow selecting the same file again
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+  
+  const handleUploadClick = () => {
+    fileInputRef.current?.click();
   };
 
   const analyzeCodeHandler = useCallback(async () => {
@@ -123,17 +204,34 @@ const CodeSubmissionForm: React.FC = () => {
 
   // Auto-analyze code when it changes (debounced)
   useEffect(() => {
-    if (!code.trim() || !analysisResult) return;
+    const trimmedCode = code.trim();
+    
+    // Don't analyze empty code, if the code hasn't changed since last analysis,
+    // or if the user hasn't interacted yet
+    if (!trimmedCode || lastAnalyzedCode === trimmedCode || !hasUserInteracted) {
+      return;
+    }
     
     const timer = setTimeout(() => {
-      // Only auto-analyze if we have a previous result and the code has changed
-      if (lastAnalyzedCode !== code.trim()) {
+      // Only auto-analyze if we have a token (user is logged in)
+      if (token) {
         analyzeCodeHandler();
+      } else {
+        // Clear any previous analysis results if user is not logged in
+        setAnalysisResult(null);
+        setLastAnalyzedCode('');
       }
-    }, 2000);
+    }, 1000);
     
     return () => clearTimeout(timer);
-  }, [code, analyzeCodeHandler, analysisResult, lastAnalyzedCode]);
+  }, [code, token, lastAnalyzedCode, analyzeCodeHandler, hasUserInteracted]);
+
+  // Track user interaction
+  const handleUserInteraction = useCallback(() => {
+    if (!hasUserInteracted) {
+      setHasUserInteracted(true);
+    }
+  }, [hasUserInteracted]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -176,24 +274,27 @@ const CodeSubmissionForm: React.FC = () => {
         title: trimmedTitle,
         code: trimmedCode,
         language,
-        analysis: finalAnalysis
+        analysis: finalAnalysis,
       };
 
-      await createReview(reviewData, token);
+      // Submit the review
+      const response = await createReview(reviewData, token);
       
-      // Reset form on success
+      // Show success message and reset form
       setSuccess(true);
       setTitle('');
-      setCode(DEFAULT_CODE[language] || '');
+      setCode(DEFAULT_CODE[language]);
+      setFileName('');
       setAnalysisResult(null);
       setLastAnalyzedCode(null);
       setShowAnalysis(false);
-      setSubmitError('');
+      
+      // Redirect to the review page
+      navigate(`/review/${response.data._id}`);
     } catch (error) {
       console.error('Submission error:', error);
       const err = error as AxiosError<{ message?: string }>;
-      const errorMessage = err.response?.data?.message || 'Failed to submit code. Please try again.';
-      setSubmitError(errorMessage);
+      setSubmitError(err.response?.data?.message || 'Failed to submit code. Please try again.');
       
       // If unauthorized, prompt to login
       if (err.response?.status === 401) {
@@ -231,20 +332,44 @@ const CodeSubmissionForm: React.FC = () => {
             disabled={isSubmitting}
           />
           
-          <FormControl fullWidth required disabled={isSubmitting}>
-            <InputLabel>Language</InputLabel>
-            <Select
-              value={language}
-              label="Language"
-              onChange={(e) => setLanguage(e.target.value as Language)}
+          <Box sx={{ display: 'flex', gap: 2, mb: 2, alignItems: 'center' }}>
+            <FormControl required disabled={isSubmitting} sx={{ minWidth: 200 }}>
+              <InputLabel>Language</InputLabel>
+              <Select
+                value={language}
+                label="Language"
+                onChange={(e) => setLanguage(e.target.value as Language)}
+              >
+                {Object.entries(languageConfigs).map(([value, { label }]) => (
+                  <MenuItem key={value} value={value}>
+                    {label}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+            
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleFileUpload}
+              accept=".js,.ts,.jsx,.tsx,.py,.cs,.java,.c,.cpp,.h,.hpp"
+              style={{ display: 'none' }}
+            />
+            <Button
+              variant="outlined"
+              startIcon={<UploadIcon />}
+              onClick={handleUploadClick}
+              disabled={isSubmitting}
+              sx={{ minWidth: '150px' }}
             >
-              {Object.entries(languageConfigs).map(([value, { label }]) => (
-                <MenuItem key={value} value={value}>
-                  {label}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
+              Upload File
+            </Button>
+            {fileName && (
+              <Typography variant="body2" sx={{ color: 'text.secondary', ml: 1 }}>
+                {fileName}
+              </Typography>
+            )}
+          </Box>
           
           <Box sx={{ border: '1px solid #ddd', borderRadius: 1, overflow: 'hidden' }}>
             <Box sx={{ bgcolor: '#f5f5f5', p: 1, borderBottom: '1px solid #ddd' }}>

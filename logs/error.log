@@ -410,3 +410,603 @@ MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUS
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-05-29 02:16:55 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::1 - Stack: Error: Invalid email or password
     at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:15:41 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:15:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:15:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:33:09 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:33:11 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:33:12 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:37:09 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:37:11 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:37:11 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:38:13 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:38:14 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:114:19)
+2025-05-29 14:38:17 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:38:20 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:38:20 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:43:57 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:43:57 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:114:19)
+2025-05-29 14:44:01 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:44:03 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:44:04 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:49:41 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:63:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:49:41 [31merror[39m: 500 - secretOrPrivateKey must have a value - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: secretOrPrivateKey must have a value
+    at Object.<anonymous>.module.exports [as sign] (C:\Work\Windsurf\code-review-platform\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at sign (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:11:14)
+    at generateToken (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:114:19)
+2025-05-29 14:49:45 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at register (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 14:49:47 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+2025-05-29 14:49:48 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at login (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:15 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:17 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:14:18 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:32 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:14:34 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:14:35 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:15:34 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:15:36 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:15:36 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [31merror[39m: 500 - Review validation failed: analysis.metrics: Path `analysis.metrics` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: analysis.metrics: Path `analysis.metrics` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schema\SubdocumentPath.js:267:14
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:19:30 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:19:30 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:19:32 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:19:33 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:40 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:21:41 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:21:42 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:21:43 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:28:59 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:29:02 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:29:02 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:29:02 [31merror[39m: 500 - Review validation failed: language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:29:03 [31merror[39m: 500 - Review validation failed: language: `text/plain` is not a valid enum value for path `language`., analysis.metrics.complexity: Path `analysis.metrics.complexity` (0) is less than minimum allowed value (1). - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `text/plain` is not a valid enum value for path `language`., analysis.metrics.complexity: Path `analysis.metrics.complexity` (0) is less than minimum allowed value (1).
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:29:04 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:29:05 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:32:12 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:32:14 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:32:15 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:32:15 [31merror[39m: 500 - Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:32:16 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:32:17 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 17:39:50 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:39:52 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 17:39:52 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 17:39:53 [31merror[39m: 500 - Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:39:54 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 17:39:55 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)

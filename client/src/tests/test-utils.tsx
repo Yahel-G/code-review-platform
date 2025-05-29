@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
-import { SocketProvider } from './context/SocketContext';
-import { AuthProvider } from './context/AuthContext';
+import { SocketProvider } from '@/context/SocketContext';
+import { AuthProvider } from '@/context/AuthContext';
 
 // Mock socket.io
 export const mockEmit = jest.fn();

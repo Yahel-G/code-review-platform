@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { app, server } = require('../../server');
+const { app, server } = require('../server');
 let httpServer;
 
 // Start HTTP server on ephemeral port before tests

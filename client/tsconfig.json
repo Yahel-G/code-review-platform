@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -22,5 +26,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/tests/analysis.service.test.ts", "src/tests/App.test.tsx", "src/setupTests.ts", "src/tests/test-utils.tsx"  ]
 }

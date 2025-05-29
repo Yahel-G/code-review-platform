@@ -1,46 +1,30 @@
-// Run in test mode
 process.env.NODE_ENV = 'test';
-jest.setTimeout(30000)   // 30s max per hook
 const request = require('supertest');
-const mongoose = require('mongoose');
-const { MongoMemoryServer } = require('mongodb-memory-server');
+const { setupTestDB, clearTestDB, closeTestDB } = require('./testHelpers');
 
 let app, server;
-let mongod;
 
 beforeAll(async () => {
-  // 1. Start in-memory MongoDB & set env vars
-  mongod = await MongoMemoryServer.create();
-  process.env.MONGODB_URI = mongod.getUri();
-  process.env.JWT_SECRET = 'testsecret';
-  process.env.JWT_REFRESH_SECRET = 'testrefresh';
-  process.env.JWT_EXPIRE = '1h';
-
-  // 2. Import app and server (no auto-listen/connect in test)
-  const { app: _app, server: _server } = require('../../server');
+  // Setup test database and get app instance
+  await setupTestDB();
+  
+  // Import app after setting up environment variables
+  const { app: _app, server: _server } = require('../server');
   app = _app;
   server = _server;
-
-  // 3. Manually connect mongoose to in-memory DB
-  await mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
 });
 
 afterEach(async () => {
-  // Clean all collections between tests
-  const collections = mongoose.connection.collections;
-  for (const coll of Object.values(collections)) {
-    await coll.deleteMany({});
-  }
+  await clearTestDB();
 });
 
 afterAll(async () => {
-  // Tear down in-memory MongoDB
-  await mongoose.connection.dropDatabase();
-  await mongoose.connection.close();
-  await mongod.stop();
+  await closeTestDB();
+  
+  // Close the server if it's running
+  if (server) {
+    await new Promise(resolve => server.close(resolve));
+  }
 });
 
 describe('Auth Routes', () => {
