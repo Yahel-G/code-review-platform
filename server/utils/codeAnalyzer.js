@@ -108,7 +108,7 @@ class JsTsAnalyzer extends CodeAnalyzer {
         for (const result of results) {
           for (const message of result.messages) {
             issues.push({
-              ruleId: message.ruleId || 'unknown-rule',
+              ruleId: message.ruleId || (message.message.includes('Parsing error') ? 'syntax-error' : 'unknown-rule'),
               message: message.message,
               line: message.line,
               column: message.column,
