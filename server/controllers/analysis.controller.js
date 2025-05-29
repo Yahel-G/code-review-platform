@@ -1,5 +1,5 @@
 const Analysis = require('../models/Analysis');
-const { analyzeCodeWithESLint } = require('../utils/codeAnalyzer');
+const { analyzeCode } = require('../utils/codeAnalyzer');
 const { calculateCodeMetrics } = require('../utils/codeMetrics');
 
 /**
@@ -17,7 +17,7 @@ exports.analyzeCode = async (req, res) => {
     }
 
     // Analyze code for issues
-    const issues = await analyzeCodeWithESLint(code, language);
+    const issues = await analyzeCode(code, language);
     
     // Calculate code metrics
     const metrics = calculateCodeMetrics(code);
