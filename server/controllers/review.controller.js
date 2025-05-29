@@ -72,7 +72,7 @@ exports.deleteReview = async (req, res, next) => {
     if (review.author.toString() !== userId) {
       throw new ApiError(StatusCodes.FORBIDDEN, 'Not authorized to delete this review');
     }
-    await review.remove();
+    await Review.findByIdAndDelete(req.params.id);
     res.status(204).send();
   } catch (err) {
     next(err);
