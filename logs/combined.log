@@ -4643,3 +4643,1174 @@ MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUS
 2025-05-29 19:56:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:16:56:27 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
 2025-05-29 19:56:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:16:56:27 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
 2025-05-29 19:56:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:16:56:27 +0000] "DELETE /api/reviews/683891bb9a60829a860e1cb4 HTTP/1.1" 204 - "-" "-"
+2025-05-29 19:59:21 [32minfo[39m: Connected to MongoDB
+2025-05-29 19:59:21 [32minfo[39m: Server running on port 5000
+2025-05-29 19:59:21 [32minfo[39m: Client connected: j6FJxerYBzguIsB0AAAC
+2025-05-29 19:59:21 [32minfo[39m: Client connected: 03eX3lmm9pR54ut1AAAD
+2025-05-29 20:01:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:08 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 20:01:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:08 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 20:01:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:11 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:11 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:11 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 20:01:11 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:11 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 20:01:12 [31merror[39m: 401 - Not authorized, token invalid - /api/analyze - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/analyze HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:01:12 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "GET /api/comments HTTP/1.1" 400 35 "-" "-"
+2025-05-29 20:01:12 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:12 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "GET /api/reviews HTTP/1.1" 200 2 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/analyze HTTP/1.1" 400 30 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:13 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:13 +0000] "POST /api/reviews HTTP/1.1" 201 474 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:14 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:14 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:14 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/analyze HTTP/1.1" 200 514 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 20:01:15 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:15 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "GET /api/reviews HTTP/1.1" 200 477 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:16 [31merror[39m: 500 - Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/reviews HTTP/1.1" 500 119 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:16 [31merror[39m: 401 - Not authorized, token invalid - /api/analyze/history - GET - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Work\Windsurf\code-review-platform\server\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:659:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:576:5
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "GET /api/analyze/history HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:16 [31merror[39m: 401 - Not authorized, token invalid - /api/comments - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/comments HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:01:16 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:16 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:17 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/reviews HTTP/1.1" 500 112 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "GET /api/analyze/history HTTP/1.1" 200 2 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:17 +0000] "POST /api/comments HTTP/1.1" 400 48 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:18 [31merror[39m: 404 - Review not found - /api/reviews/507f1f77bcf86cd799439011 - GET - ::ffff:127.0.0.1 - Stack: Error: Review not found
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:22:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "GET /api/reviews/507f1f77bcf86cd799439011 HTTP/1.1" 404 46 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:18 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "GET /api/analyze/history HTTP/1.1" 200 163 "-" "-"
+2025-05-29 20:01:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:18 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:19 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:19 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:19 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:19 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:19 +0000] "POST /api/reviews HTTP/1.1" 201 627 "-" "-"
+2025-05-29 20:01:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:20 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:20 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:20 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 20:01:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:20 +0000] "GET /api/reviews/683892e0bc97f2f5601abc4f HTTP/1.1" 200 475 "-" "-"
+2025-05-29 20:01:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:21 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:21 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:22 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:22 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:22 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews/anyid - PUT - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 20:01:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:22 +0000] "PUT /api/reviews/anyid HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:01:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:23 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:23 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:24 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:24 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:24 [31merror[39m: 404 - Review not found - /api/reviews/507f1f77bcf86cd799439011 - PUT - ::ffff:127.0.0.1 - Stack: Error: Review not found
+    at _callee4$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:50:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:24 +0000] "PUT /api/reviews/507f1f77bcf86cd799439011 HTTP/1.1" 404 46 "-" "-"
+2025-05-29 20:01:25 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:25 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:25 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:25 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:26 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:26 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:26 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 20:01:26 [31merror[39m: 403 - Not authorized to update this review - /api/reviews/683892e6bc97f2f5601abc82 - PUT - ::ffff:127.0.0.1 - Stack: Error: Not authorized to update this review
+    at _callee4$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:53:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:26 +0000] "PUT /api/reviews/683892e6bc97f2f5601abc82 HTTP/1.1" 403 66 "-" "-"
+2025-05-29 20:01:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:27 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:27 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:28 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:28 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:28 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 20:01:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:28 +0000] "PUT /api/reviews/683892e8bc97f2f5601abc97 HTTP/1.1" 200 477 "-" "-"
+2025-05-29 20:01:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:29 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:29 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:30 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:31 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:31 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews/anyid - DELETE - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Work\Windsurf\code-review-platform\server\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:659:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:576:5
+2025-05-29 20:01:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:31 +0000] "DELETE /api/reviews/anyid HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:01:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:31 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:32 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:32 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:33 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:33 [31merror[39m: 404 - Review not found - /api/reviews/507f1f77bcf86cd799439011 - DELETE - ::ffff:127.0.0.1 - Stack: Error: Review not found
+    at _callee5$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:70:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:33 +0000] "DELETE /api/reviews/507f1f77bcf86cd799439011 HTTP/1.1" 404 46 "-" "-"
+2025-05-29 20:01:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:33 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:34 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:34 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:35 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:35 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 20:01:35 [31merror[39m: 403 - Not authorized to delete this review - /api/reviews/683892efbc97f2f5601abccc - DELETE - ::ffff:127.0.0.1 - Stack: Error: Not authorized to delete this review
+    at _callee5$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:73:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 20:01:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:35 +0000] "DELETE /api/reviews/683892efbc97f2f5601abccc HTTP/1.1" 403 66 "-" "-"
+2025-05-29 20:01:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:35 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:36 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:36 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 20:01:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:37 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 20:01:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:37 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 20:01:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:37 +0000] "DELETE /api/reviews/683892f1bc97f2f5601abce1 HTTP/1.1" 204 - "-" "-"
+2025-05-29 20:01:55 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:55 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:56 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:56 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:56 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:56 +0000] "GET /api/comments HTTP/1.1" 400 35 "-" "-"
+2025-05-29 20:01:57 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:57 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:57 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:57 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:58 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:58 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:58 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:58 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:59 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:01:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:59 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:01:59 [31merror[39m: 401 - Not authorized, token invalid - /api/comments - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 20:01:59 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:01:59 +0000] "POST /api/comments HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:02:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:02:00 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:02:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:02:00 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:02:00 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:02:00 +0000] "POST /api/comments HTTP/1.1" 400 48 "-" "-"
+2025-05-29 20:02:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:02:01 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:02:01 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:02:01 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:22:06 [32minfo[39m: Connected to MongoDB
+2025-05-29 20:22:06 [32minfo[39m: Server running on port 5000
+2025-05-29 20:22:06 [32minfo[39m: Client connected: J_eA4sQ4rt25izfhAAAC
+2025-05-29 20:22:06 [32minfo[39m: Client connected: hIaIs8dm3wMSL0kwAAAD
+2025-05-29 20:39:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:41 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:39:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:42 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:39:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:42 +0000] "GET /api/comments HTTP/1.1" 400 35 "-" "-"
+2025-05-29 20:39:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:42 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:39:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:43 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:39:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:43 +0000] "GET /api/comments?reviewId=68389bdf88c63ab0f86e18a6 HTTP/1.1" 200 2 "-" "-"
+2025-05-29 20:39:43 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:43 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:39:44 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:44 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:39:44 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:44 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:39:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:45 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:39:45 [31merror[39m: 401 - Not authorized, token invalid - /api/comments - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 20:39:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:45 +0000] "POST /api/comments HTTP/1.1" 401 59 "-" "-"
+2025-05-29 20:39:45 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:45 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:39:46 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:46 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:39:46 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:46 +0000] "POST /api/comments HTTP/1.1" 400 48 "-" "-"
+2025-05-29 20:39:46 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:46 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 20:39:47 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:47 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 20:39:47 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:17:39:47 +0000] "POST /api/comments HTTP/1.1" 500 26 "-" "-"
+2025-05-29 20:43:01 [32minfo[39m: Connected to MongoDB
+2025-05-29 20:43:01 [32minfo[39m: Server running on port 5000
+2025-05-29 20:43:01 [32minfo[39m: Client connected: KQZQetyeEXg20TOXAAAC
+2025-05-29 20:43:01 [32minfo[39m: Client connected: TffVkMJyBxyUFKvzAAAD
+2025-05-29 21:21:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:03 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:21:03 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:03 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:21:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:04 +0000] "GET /api/comments HTTP/1.1" 400 35 "-" "-"
+2025-05-29 21:21:04 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:04 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:21:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:05 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:21:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:05 +0000] "GET /api/comments?reviewId=6838a5911f1d960dfe5bc9d7 HTTP/1.1" 200 2 "-" "-"
+2025-05-29 21:21:05 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:05 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:21:06 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:06 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:21:06 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:06 +0000] "GET /api/comments?reviewId=6838a5921f1d960dfe5bc9e2 HTTP/1.1" 200 274 "-" "-"
+2025-05-29 21:21:06 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:06 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:21:07 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:07 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:21:07 [31merror[39m: 401 - Not authorized, token invalid - /api/comments - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 21:21:07 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:07 +0000] "POST /api/comments HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:21:07 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:07 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:21:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:08 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:21:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:08 +0000] "POST /api/comments HTTP/1.1" 400 48 "-" "-"
+2025-05-29 21:21:08 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:08 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:21:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:09 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:21:09 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:21:09 +0000] "POST /api/comments HTTP/1.1" 201 271 "-" "-"
+2025-05-29 21:23:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:15 +0000] "GET /health HTTP/1.1" 200 54 "-" "-"
+2025-05-29 21:23:15 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:15 +0000] "GET /nonexistent HTTP/1.1" 404 62 "-" "-"
+2025-05-29 21:23:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:17 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 21:23:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:17 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:17 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:18 [31merror[39m: 401 - Not authorized, token invalid - /api/analyze - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/analyze HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "GET /api/comments HTTP/1.1" 400 35 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/auth/register HTTP/1.1" 201 642 "-" "-"
+2025-05-29 21:23:18 [31merror[39m: 409 - User with this email or username already exists - /api/auth/register - POST - ::ffff:127.0.0.1 - Stack: Error: User with this email or username already exists
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:47:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:18 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:18 +0000] "POST /api/auth/register HTTP/1.1" 409 77 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/analyze HTTP/1.1" 400 30 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "GET /api/reviews HTTP/1.1" 200 2 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "GET /api/comments?reviewId=6838a617129fb0b6f32f8998 HTTP/1.1" 200 2 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/reviews HTTP/1.1" 201 474 "-" "-"
+2025-05-29 21:23:19 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:19 +0000] "POST /api/auth/login HTTP/1.1" 200 646 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:20 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:107:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "GET /api/comments?reviewId=6838a618129fb0b6f32f89a3 HTTP/1.1" 200 274 "-" "-"
+2025-05-29 21:23:20 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:20 +0000] "POST /api/reviews HTTP/1.1" 201 472 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/analyze HTTP/1.1" 200 514 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/register HTTP/1.1" 201 646 "-" "-"
+2025-05-29 21:23:21 [31merror[39m: 401 - Invalid email or password - /api/auth/login - POST - ::ffff:127.0.0.1 - Stack: Error: Invalid email or password
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:98:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\auth.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:21 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:21 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 21:23:22 [31merror[39m: 500 - Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: language: `unsupported_language` is not a valid enum value for path `language`.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/reviews HTTP/1.1" 500 119 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "GET /api/reviews HTTP/1.1" 200 477 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:22 [31merror[39m: 401 - Not authorized, token invalid - /api/comments - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/comments HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:22 [31merror[39m: 401 - Not authorized, token invalid - /api/analyze/history - GET - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Work\Windsurf\code-review-platform\server\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:659:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:576:5
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "GET /api/analyze/history HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:22 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:22 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:23 [31merror[39m: 500 - Review validation failed: title: Path `title` is required., language: Path `language` is required. - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: ValidationError: Review validation failed: title: Path `title` is required., language: Path `language` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3219:32)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\document.js:3012:17
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\mongoose\lib\schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/reviews HTTP/1.1" 500 112 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/comments HTTP/1.1" 400 48 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "GET /api/analyze/history HTTP/1.1" 200 2 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:23 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:23 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:24 [31merror[39m: 404 - Review not found - /api/reviews/507f1f77bcf86cd799439011 - GET - ::ffff:127.0.0.1 - Stack: Error: Review not found
+    at _callee2$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:22:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "GET /api/reviews/507f1f77bcf86cd799439011 HTTP/1.1" 404 46 "-" "-"
+2025-05-29 21:23:24 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews - POST - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/reviews HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/comments HTTP/1.1" 201 271 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "GET /api/analyze/history HTTP/1.1" 200 163 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:24 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:24 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:25 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:25 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:25 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:25 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:25 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:25 +0000] "POST /api/reviews HTTP/1.1" 201 627 "-" "-"
+2025-05-29 21:23:25 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:25 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:26 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:26 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 21:23:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:26 +0000] "GET /api/reviews/6838a61eb14f64afffa8e854 HTTP/1.1" 200 475 "-" "-"
+2025-05-29 21:23:26 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:26 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:27 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:27 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:27 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:28 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:28 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews/anyid - PUT - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:85:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Work\Windsurf\code-review-platform\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-29 21:23:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:28 +0000] "PUT /api/reviews/anyid HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:23:28 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:28 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:29 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:29 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:29 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:30 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:30 [31merror[39m: 404 - Review not found - /api/reviews/507f1f77bcf86cd799439011 - PUT - ::ffff:127.0.0.1 - Stack: Error: Review not found
+    at _callee4$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:50:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:30 +0000] "PUT /api/reviews/507f1f77bcf86cd799439011 HTTP/1.1" 404 46 "-" "-"
+2025-05-29 21:23:30 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:30 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:31 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:31 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:31 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:32 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:32 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 21:23:32 [31merror[39m: 403 - Not authorized to update this review - /api/reviews/6838a624b14f64afffa8e887 - PUT - ::ffff:127.0.0.1 - Stack: Error: Not authorized to update this review
+    at _callee4$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:53:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:32 +0000] "PUT /api/reviews/6838a624b14f64afffa8e887 HTTP/1.1" 403 66 "-" "-"
+2025-05-29 21:23:32 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:32 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:33 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:33 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:33 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:34 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:34 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 21:23:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:34 +0000] "PUT /api/reviews/6838a626b14f64afffa8e89c HTTP/1.1" 200 477 "-" "-"
+2025-05-29 21:23:34 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:34 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:35 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:35 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:35 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:36 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:36 [31merror[39m: 401 - Not authorized, token invalid - /api/reviews/anyid - DELETE - ::ffff:127.0.0.1 - Stack: Error: Not authorized, token invalid
+    at _callee$ (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:28:17)
+    at call (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at _next (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1)
+    at new Promise (<anonymous>)
+    at C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:2:1
+    at apply (C:\Work\Windsurf\code-review-platform\server\middlewares\auth.js:30:2)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Work\Windsurf\code-review-platform\server\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Work\Windsurf\code-review-platform\server\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Work\Windsurf\code-review-platform\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:659:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Work\Windsurf\code-review-platform\server\node_modules\express-rate-limit\dist\index.cjs:576:5
+2025-05-29 21:23:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:36 +0000] "DELETE /api/reviews/anyid HTTP/1.1" 401 59 "-" "-"
+2025-05-29 21:23:36 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:36 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:37 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:37 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:37 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:38 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:38 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:38 [31merror[39m: 404 - Review not found - /api/reviews/507f1f77bcf86cd799439011 - DELETE - ::ffff:127.0.0.1 - Stack: Error: Review not found
+    at _callee5$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:70:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:38 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:38 +0000] "DELETE /api/reviews/507f1f77bcf86cd799439011 HTTP/1.1" 404 46 "-" "-"
+2025-05-29 21:23:38 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:38 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:39 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:39 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:39 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:39 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:40 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:40 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 21:23:40 [31merror[39m: 403 - Not authorized to delete this review - /api/reviews/6838a62cb14f64afffa8e8d1 - DELETE - ::ffff:127.0.0.1 - Stack: Error: Not authorized to delete this review
+    at _callee5$ (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:73:13)
+    at call (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator.s (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at Generator._invoke [as next] (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at asyncGeneratorStep (C:\Work\Windsurf\code-review-platform\server\controllers\review.controller.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-29 21:23:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:40 +0000] "DELETE /api/reviews/6838a62cb14f64afffa8e8d1 HTTP/1.1" 403 66 "-" "-"
+2025-05-29 21:23:40 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:40 +0000] "POST /api/auth/register HTTP/1.1" 201 648 "-" "-"
+2025-05-29 21:23:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:41 +0000] "POST /api/auth/login HTTP/1.1" 200 648 "-" "-"
+2025-05-29 21:23:41 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:41 +0000] "POST /api/auth/register HTTP/1.1" 201 650 "-" "-"
+2025-05-29 21:23:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:42 +0000] "POST /api/auth/login HTTP/1.1" 200 650 "-" "-"
+2025-05-29 21:23:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:42 +0000] "POST /api/reviews HTTP/1.1" 201 475 "-" "-"
+2025-05-29 21:23:42 [32minfo[39m: ::ffff:127.0.0.1 - - [29/May/2025:18:23:42 +0000] "DELETE /api/reviews/6838a62eb14f64afffa8e8e6 HTTP/1.1" 204 - "-" "-"
