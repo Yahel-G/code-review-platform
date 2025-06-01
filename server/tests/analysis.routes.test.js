@@ -98,6 +98,9 @@ describe('Analysis Routes', () => {
       expect(entry).toHaveProperty('id');
       expect(entry.language).toBe('javascript');
       expect(entry.metrics).toHaveProperty('complexity');
+      expect(entry.metrics).toHaveProperty('linesOfCode', 1);
+      expect(entry.metrics).toHaveProperty('maintainability', 100);
+      expect(entry).toHaveProperty('createdAt');
     });
   });
 });

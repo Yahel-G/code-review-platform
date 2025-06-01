@@ -81,6 +81,7 @@ const register = async (req, res, next) => {
       success: true,
       token,
       user,
+      refreshToken // Include refresh token in response for testing
     });
   } catch (error) {
     next(error);
@@ -154,17 +155,25 @@ const getCurrentUser = async (req, res, next) => {
 // Refresh access token
 const refreshToken = async (req, res, next) => {
   try {
-    const refreshToken = req.cookies.refreshToken;
-    
-    if (!refreshToken) {
+    const cookieHeader = req.headers.cookie || '';
+    const cookieArr = cookieHeader.split(';').map(c => c.trim());
+    const refreshCookie = cookieArr.find(c => c.startsWith('refreshToken='));
+    if (!refreshCookie) {
       throw new ApiError(StatusCodes.UNAUTHORIZED, 'No refresh token provided');
     }
-
+    const refreshToken = refreshCookie.split('=')[1];
+    
     // Verify refresh token
     const decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
-    const user = await User.findById(decoded.id);
-
-    if (!user || user.refreshToken !== refreshToken) {
+    
+    // Explicitly include refreshToken field in the query
+    const user = await User.findById(decoded.id).select('+refreshToken');
+    
+    if (!user) {
+      throw new ApiError(StatusCodes.UNAUTHORIZED, 'User not found');
+    }
+    
+    if (!user.refreshToken || user.refreshToken !== refreshToken) {
       throw new ApiError(StatusCodes.UNAUTHORIZED, 'Invalid refresh token');
     }
 
@@ -176,6 +185,9 @@ const refreshToken = async (req, res, next) => {
       token,
     });
   } catch (error) {
+    if (error.name === 'JsonWebTokenError' || error.name === 'TokenExpiredError') {
+      return next(new ApiError(StatusCodes.UNAUTHORIZED, 'Invalid refresh token'));
+    }
     next(error);
   }
 };

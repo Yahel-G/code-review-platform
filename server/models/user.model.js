@@ -62,12 +62,12 @@ const userSchema = new mongoose.Schema(
         earnedAt: {
           type: Date,
           default: Date.now,
-        },
-      },
+        }
+      }
     ],
     refreshToken: {
       type: String,
-      select: false,
+      select: false
     },
     lastActive: {
       type: Date,

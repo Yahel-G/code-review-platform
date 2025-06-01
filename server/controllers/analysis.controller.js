@@ -65,7 +65,7 @@ exports.getAnalysisHistory = async (req, res) => {
   try {
     const analyses = await Analysis.find({ user: req.user.id })
       .sort({ createdAt: -1 })
-      .select('language metrics.complexity metrics.maintainability createdAt')
+      .select('language metrics.complexity metrics.maintainability metrics.linesOfCode createdAt')
       .limit(20);
 
     // Format the response to match the frontend expectations

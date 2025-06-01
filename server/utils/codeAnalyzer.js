@@ -5,7 +5,7 @@
  * @returns {Promise<Array>} Array of issues found
  */
 const { ESLint } = require('eslint');
-const { execSync } = require('child_process');
+const cp = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
@@ -58,10 +58,6 @@ class CodeAnalyzer {
 class JsTsAnalyzer extends CodeAnalyzer {
   constructor() {
     super();
-    this.eslint = new ESLint({
-      useEslintrc: false,
-      overrideConfig: this.getEslintConfig('javascript')
-    });
   }
 
   getEslintConfig(language) {
@@ -83,6 +79,7 @@ class JsTsAnalyzer extends CodeAnalyzer {
         'eqeqeq': ['error', 'always'],
         'no-var': 'error',
         'prefer-const': 'warn',
+        'no-unused-vars': 'off',
       },
       env: {
         browser: true,
@@ -100,8 +97,13 @@ class JsTsAnalyzer extends CodeAnalyzer {
       const tempFile = this.createTempFile(language === 'typescript' ? 'ts' : 'js', code);
       
       try {
+        // Instantiate ESLint with config per language
+        const eslint = new ESLint({
+          useEslintrc: false,
+          overrideConfig: this.getEslintConfig(language)
+        });
         // Run ESLint on the file
-        const results = await this.eslint.lintFiles([tempFile]);
+        const results = await eslint.lintFiles([tempFile]);
         
         // Format results
         const issues = [];
@@ -153,7 +155,7 @@ class PythonAnalyzer extends CodeAnalyzer {
       
       try {
         const command = `pylint --output-format=json ${tempFile}`;
-        const output = execSync(command, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] });
+        const output = cp.execSync(command, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] });
         
         // Parse pylint JSON output
         const results = JSON.parse(output || '[]');
@@ -229,10 +231,10 @@ class CSharpAnalyzer extends CodeAnalyzer {
         
         // First, try to build the project to get compilation errors
         try {
-          execSync(`dotnet build "${projectFile}" -nologo -v q`, { stdio: 'pipe' });
+          cp.execSync(`dotnet build "${projectFile}" -nologo -v q`, { stdio: 'pipe' });
           
           // If build succeeds, run code analysis
-          const analysisOutput = execSync(
+          const analysisOutput = cp.execSync(
             `dotnet build "${projectFile}" -p:GenerateFullPaths=true -consoleloggerparameters:NoSummary -nologo`, 
             { stdio: 'pipe' }
           ).toString();
@@ -316,7 +318,7 @@ class JavaAnalyzer extends CodeAnalyzer {
       
       try {
         const command = `javac -Xlint:all ${tempFile}`;
-        const output = execSync(command, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] });
+        const output = cp.execSync(command, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] });
         
         return this.parseLintOutput(output, line => {
           // Example: Test.java:10: warning: [deprecation] someMethod() in A has been deprecated
@@ -364,11 +366,11 @@ class CppAnalyzer extends CodeAnalyzer {
       
       try {
         const command = `cppcheck --enable=all ${tempFile} 2>&1`;
-        const output = execSync(command, { encoding: 'utf-8' });
+        const output = cp.execSync(command, { encoding: 'utf-8' });
         
         return this.parseLintOutput(output, line => {
           // Example: test.c:4:5: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
-          const match = line.match(/.+?:(\d+):(\d+):\s*(\w+):\s*(.+?)(?:\s+\[(\w+)\])?/);
+          const match = line.match(/.+?:(\d+):(\d+):\s*(\w+):\s*([^\[]+)(?:\s*\[(\w+)\])?/);
           if (match) {
             return {
               ruleId: match[5] || 'cppcheck',

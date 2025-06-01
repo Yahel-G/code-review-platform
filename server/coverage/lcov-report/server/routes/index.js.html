@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -85,50 +85,50 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const express = <span class="cstat-no" title="statement not covered" >require('express');</span>
-const router = <span class="cstat-no" title="statement not covered" >express.Router();</span>
-const { notFound } = <span class="cstat-no" title="statement not covered" >require('../middlewares/error.middleware');</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const express = require('express');
+const router = express.Router();
+const { notFound } = require('../middlewares/error.middleware');
 &nbsp;
 // Import route handlers
-const authRoutes = <span class="cstat-no" title="statement not covered" >require('./auth.routes');</span>
-const userRoutes = <span class="cstat-no" title="statement not covered" >require('./user.routes');</span>
-const reviewRoutes = <span class="cstat-no" title="statement not covered" >require('./review.routes');</span>
-const commentRoutes = <span class="cstat-no" title="statement not covered" >require('./comment.routes');</span>
-const analysisRoutes = <span class="cstat-no" title="statement not covered" >require('./analysis.routes');</span>
+const authRoutes = require('./auth.routes');
+const userRoutes = require('./user.routes');
+const reviewRoutes = require('./review.routes');
+const commentRoutes = require('./comment.routes');
+const analysisRoutes = require('./analysis.routes');
 &nbsp;
 // API routes
-<span class="cstat-no" title="statement not covered" >router.use('/auth', authRoutes);</span>
-<span class="cstat-no" title="statement not covered" >router.use('/users', userRoutes);</span>
-<span class="cstat-no" title="statement not covered" >router.use('/reviews', reviewRoutes);</span>
-<span class="cstat-no" title="statement not covered" >router.use('/comments', commentRoutes);</span>
-<span class="cstat-no" title="statement not covered" >router.use('/analyze', analysisRoutes);</span>
+router.use('/auth', authRoutes);
+router.use('/users', userRoutes);
+router.use('/reviews', reviewRoutes);
+router.use('/comments', commentRoutes);
+router.use('/analyze', analysisRoutes);
 &nbsp;
 // 404 handler for API routes
-<span class="cstat-no" title="statement not covered" >router.use('/api/*', notFound);</span>
+router.use('/api/*', notFound);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >module.exports = router;</span>
+module.exports = router;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -136,7 +136,7 @@ const analysisRoutes = <span class="cstat-no" title="statement not covered" >req
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-29T23:02:45.734Z
+                at 2025-06-01T00:11:33.893Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
