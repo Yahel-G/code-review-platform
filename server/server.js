@@ -65,12 +65,9 @@ app.use((req, res) => {
 });
 
 // Graceful shutdown
-function onSignal() {
+async function onSignal() {
   logger.info('Server is starting cleanup');
-  return Promise.all([
-    mongoose.connection.close(),
-    // Add any other cleanup tasks here
-  ]);
+  await mongoose.connection.close();
 }
 
 async function onHealthCheck() {
@@ -117,4 +114,4 @@ process.on('unhandledRejection', (err) => {
   server.close(() => process.exit(1));
 });
 
-module.exports = { app, server };
+module.exports = { app, server, onSignal, onHealthCheck };

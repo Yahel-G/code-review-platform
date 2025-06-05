@@ -35,8 +35,8 @@ describe('Validation Middleware', () => {
         expect(err.statusCode).toBe(StatusCodes.UNPROCESSABLE_ENTITY);
         expect(err.message).toBe('Validation failed');
         expect(err.isOperational).toBe(true);
-        // Stack holds extracted errors
-        expect(err.stack).toEqual([{ field: 'must not be empty' }]);
+        // Validation errors are now in err.errors
+        expect(err.errors).toEqual([{ field: 'must not be empty' }]);
       }
     });
   });

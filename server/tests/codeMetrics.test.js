@@ -32,4 +32,10 @@ describe('calculateCodeMetrics', () => {
     expect(metrics.complexity).toBe(1);
     expect(metrics.maintainability).toBe(0);
   });
+
+  it('returns default metrics on internal error', () => {
+    // non-string input to trigger error
+    const result = calculateCodeMetrics(123);
+    expect(result).toEqual({ linesOfCode: 0, complexity: 1, maintainability: 70 });
+  });
 });

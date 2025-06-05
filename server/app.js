@@ -23,7 +23,9 @@ const limiter = rateLimit({
   max: 100,
   message: 'Too many requests from this IP, please try again later.'
 });
-app.use(limiter);
+if (process.env.NODE_ENV !== 'test') {
+  app.use(limiter);
+}
 
 // Logging
 app.use(morgan('combined', { stream: { write: msg => logger.info(msg.trim()) } }));

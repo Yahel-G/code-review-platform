@@ -72,6 +72,20 @@ describe('Auth Routes', () => {
       expect(res.status).toBe(409);
       expect(res.body.message).toMatch(/already exists/);
     });
+
+    it('rejects short password (422)', async () => {
+      const res = await request(app)
+        .post('/api/auth/register')
+        .send({
+          username: 'shortpw',
+          email: 'shortpw@example.com',
+          password: '123'
+        });
+      expect(res.status).toBe(422);
+      expect(res.body.message).toBe('Validation failed');
+      expect(Array.isArray(res.body.errors)).toBe(true);
+      expect(res.body.errors.length).toBeGreaterThan(0);
+    });
   });
 
   describe('POST /api/auth/login', () => {

@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'test';
+
 const mongoose = require('mongoose');
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const request = require('supertest');
@@ -15,7 +17,7 @@ const testUser = {
 const setupTestDB = async () => {
   // Only set up the in-memory server if not already running
   if (!mongoServer) {
-    mongoServer = await MongoMemoryServer.create();
+    mongoServer = await MongoMemoryServer.create({ instance: { ip: '127.0.0.1' } });
     const uri = mongoServer.getUri();
     
     // Set environment variables
@@ -25,6 +27,13 @@ const setupTestDB = async () => {
     process.env.JWT_EXPIRE = '1h';
     
     // Connect to the in-memory database
+    await mongoose.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+  } else if (mongoose.connection.readyState === 0) { // 0 = disconnected
+    // If mongoServer exists but mongoose is disconnected, reconnect
+    const uri = mongoServer.getUri();
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -52,11 +61,12 @@ const clearTestDB = async () => {
 const closeTestDB = async () => {
   if (mongoServer) {
     try {
-      if (mongoose.connection.readyState === 1) {
-        await mongoose.connection.dropDatabase();
-        await mongoose.connection.close();
+      // Ensure Mongoose is disconnected before stopping the server
+      if (mongoose.connection.readyState !== 0) { // 0 = disconnected
+        await mongoose.disconnect();
       }
-      await mongoServer.stop();
+      // Ensure mongoServer.stop is called and awaited
+      await mongoServer.stop({ doCleanup: true, force: false }); // Added options for clarity/robustness
     } catch (error) {
       console.error('Error closing test database:', error);
     } finally {

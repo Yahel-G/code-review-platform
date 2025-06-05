@@ -4,6 +4,20 @@ const jwt = require('jsonwebtoken');
 const { setupTestDB, clearTestDB, closeTestDB, getAuthToken } = require('./testHelpers');
 const Analysis = require('../models/Analysis');
 
+jest.mock('../utils/codeAnalyzer', () => ({
+  analyzeCode: jest.fn().mockResolvedValue([
+    { ruleId: 'no-var', message: 'Use let', line: 1, column: 1, severity: 1 },
+  ]),
+}));
+
+jest.mock('../utils/codeMetrics', () => ({
+  calculateCodeMetrics: jest.fn().mockReturnValue({
+    linesOfCode: 10,
+    complexity: 2,
+    maintainability: 80,
+  }),
+}));
+
 let app, server, token, userId;
 
 beforeAll(async () => {
@@ -61,6 +75,21 @@ describe('Analysis Routes', () => {
       expect(res.body.metrics).toHaveProperty('complexity');
       expect(res.body.metrics).toHaveProperty('maintainability');
       expect(res.body).toHaveProperty('suggestions');
+    });
+
+    it('saves analysis to DB and returns shape', async () => {
+      const code = 'var a = 1; console.log(a);';
+      const res = await request(app)
+        .post('/api/analyze')
+        .set('Authorization', `Bearer ${token}`)
+        .send({ code, language: 'javascript' });
+      expect(res.status).toBe(StatusCodes.OK);
+      const entries = await Analysis.find({ user: userId });
+      expect(entries).toHaveLength(1);
+      const entry = entries[0];
+      expect(entry).toHaveProperty('issues');
+      expect(entry).toHaveProperty('metrics');
+      expect(entry).toHaveProperty('language', 'javascript');
     });
   });
 

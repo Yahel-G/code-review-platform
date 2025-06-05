@@ -20,11 +20,13 @@ const validate = (req, res, next) => {
     extractedErrors.push({ [err.param]: err.msg })
   );
 
+  // Pass extractedErrors as the 'errors' argument, true for 'isOperational'. Stack will be auto-captured.
   throw new ApiError(
     StatusCodes.UNPROCESSABLE_ENTITY,
     'Validation failed',
-    true,
-    extractedErrors
+    extractedErrors, // errors array
+    true // isOperational
+    // stack will be captured by ApiError constructor
   );
 };
 
@@ -37,9 +39,13 @@ const validateObjectId = (paramName) => {
     const id = req.params[paramName];
     
     if (!id || !id.match(/^[0-9a-fA-F]{24}$/)) {
+      // Pass an empty array for 'errors', true for 'isOperational'. Stack will be auto-captured.
       throw new ApiError(
         StatusCodes.BAD_REQUEST,
-        `Invalid ${paramName} format`
+        `Invalid ${paramName} format`,
+        [], // errors array (empty for this type of error)
+        true // isOperational
+        // stack will be captured by ApiError constructor
       );
     }
     

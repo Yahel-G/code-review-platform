@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:watch": "npm test -- --watch",
-    "test:coverage": "npm test -- --coverage",
+    "test:cov": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "start-safe": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "audit:check": "npm audit --production"
@@ -70,8 +70,7 @@
 "jest": {
   "moduleNameMapper": {
     "^@/(.*)$": "<rootDir>/src/$1",
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
-    "^react-router-dom$": "<rootDir>/node_modules/react-router-dom"
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
   },
   "transformIgnorePatterns": [
     "node_modules/(?!(axios|react-router-dom)/)"

@@ -98,6 +98,62 @@ describe('Review Routes', () => {
     });
   });
 
+  describe('POST /api/reviews', () => {
+    it('rejects without token', async () => {
+      const res = await request(app).post('/api/reviews').send(reviewData);
+      expect(res.status).toBe(StatusCodes.UNAUTHORIZED);
+    });
+
+    it('rejects with invalid token', async () => {
+      const res = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', 'Bearer invalid-token')
+        .send(reviewData);
+      expect(res.status).toBe(StatusCodes.UNAUTHORIZED);
+    });
+
+    it('creates review for author', async () => {
+      const res = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(reviewData);
+      expect(res.status).toBe(StatusCodes.CREATED);
+      expect(res.body.title).toBe(reviewData.title);
+    });
+  });
+
+  describe('POST /api/reviews missing fields', () => {
+    it('rejects missing title (500)', async () => {
+      const payload = { code: reviewData.code, language: reviewData.language, analysis: reviewData.analysis };
+      const res = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(payload);
+      expect(res.status).toBe(StatusCodes.INTERNAL_SERVER_ERROR);
+      expect(res.body.message).toMatch(/title/);
+    });
+
+    it('rejects missing code (500)', async () => {
+      const payload = { title: reviewData.title, language: reviewData.language, analysis: reviewData.analysis };
+      const res = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(payload);
+      expect(res.status).toBe(StatusCodes.INTERNAL_SERVER_ERROR);
+      expect(res.body.message).toMatch(/code/);
+    });
+
+    it('rejects missing language (500)', async () => {
+      const payload = { title: reviewData.title, code: reviewData.code, analysis: reviewData.analysis };
+      const res = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(payload);
+      expect(res.status).toBe(StatusCodes.INTERNAL_SERVER_ERROR);
+      expect(res.body.message).toMatch(/language/);
+    });
+  });
+
   describe('PUT /api/reviews/:id', () => {
     it('rejects without token', async () => {
       const res = await request(app).put('/api/reviews/anyid').send({ title: 'X' });
@@ -124,6 +180,51 @@ describe('Review Routes', () => {
         .set('Authorization', `Bearer ${tokenOther}`)
         .send({ title: 'Hacked' });
       expect(res.status).toBe(StatusCodes.FORBIDDEN);
+    });
+
+    it('rejects update missing required title (500)', async () => {
+      // Create a review first
+      const createRes = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(reviewData);
+      const id = createRes.body.id;
+      const res = await request(app)
+        .put(`/api/reviews/${id}`)
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send({ title: '' });
+      expect(res.status).toBe(StatusCodes.INTERNAL_SERVER_ERROR);
+      expect(res.body.message).toMatch(/title/);
+    });
+
+    it('rejects update missing required code (500)', async () => {
+      // Create a review first
+      const createRes = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(reviewData);
+      const id = createRes.body.id;
+      const res = await request(app)
+        .put(`/api/reviews/${id}`)
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send({ code: '' });
+      expect(res.status).toBe(StatusCodes.INTERNAL_SERVER_ERROR);
+      expect(res.body.message).toMatch(/code/);
+    });
+
+    it('rejects update missing required language (500)', async () => {
+      // Create a review first
+      const createRes = await request(app)
+        .post('/api/reviews')
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send(reviewData);
+      const id = createRes.body.id;
+      const res = await request(app)
+        .put(`/api/reviews/${id}`)
+        .set('Authorization', `Bearer ${tokenUser}`)
+        .send({ language: '' });
+      expect(res.status).toBe(StatusCodes.INTERNAL_SERVER_ERROR);
+      expect(res.body.message).toMatch(/language/);
     });
 
     it('updates review for author', async () => {

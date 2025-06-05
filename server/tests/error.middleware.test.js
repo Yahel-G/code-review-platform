@@ -3,7 +3,8 @@ const { StatusCodes } = require('http-status-codes');
 
 describe('ApiError', () => {
   it('sets properties correctly', () => {
-    const err = new ApiError(StatusCodes.BAD_REQUEST, 'Test error', true, 'stacktrace');
+    // Match new signature: (statusCode, message, errors, isOperational, stack)
+    const err = new ApiError(StatusCodes.BAD_REQUEST, 'Test error', [], true, 'stacktrace');
     expect(err.statusCode).toBe(StatusCodes.BAD_REQUEST);
     expect(err.message).toBe('Test error');
     expect(err.isOperational).toBe(true);

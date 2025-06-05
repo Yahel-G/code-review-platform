@@ -155,3 +155,7 @@ function getSeverity(eslintSeverity) {
     default: return 1; // default to warning
   }
 }
+
+// Export private helpers for testing
+exports.generateSuggestions = generateSuggestions;
+exports.getSeverity = getSeverity;

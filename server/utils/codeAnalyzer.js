@@ -208,11 +208,15 @@ class CSharpAnalyzer extends CodeAnalyzer {
     try {
       if (!code?.trim()) return [];
       
-      const tempFile = this.createTempFile('cs', code);
-      const tempDir = path.dirname(tempFile);
-      const projectFile = path.join(tempDir, 'temp.csproj');
-      
+      let tempFile; // Will be assigned after creation
+      let tempDir;  // Will be derived from tempFile
+      let projectFile; // Will be derived from tempDir
+
       try {
+        tempFile = this.createTempFile('cs', code);
+        tempDir = path.dirname(tempFile);
+        projectFile = path.join(tempDir, 'temp.csproj');
+        
         // Create a minimal .csproj file for analysis
         const csprojContent = `<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
@@ -255,9 +259,24 @@ class CSharpAnalyzer extends CodeAnalyzer {
           });
           
         } catch (buildError) {
-          // If build fails, parse the error output
-          const errorOutput = buildError.stderr?.toString() || buildError.stdout?.toString() || '';
-          return this.parseLintOutput(errorOutput, line => {
+          const errOutput = buildError.stderr?.toString() || buildError.stdout?.toString() || '';
+          // Check if dotnet command itself failed to run (e.g., not installed)
+          if (buildError.code === 'ENOENT' || /command not found|not recognized/i.test(errOutput) || /is not recognized as an internal or external command/i.test(errOutput)) {
+            console.warn('dotnet command not found or failed to execute. C# analysis skipped.');
+            return []; // Return empty array if dotnet is not available
+          }
+
+          // Check if 'projectFile' (which is temp.csproj) was not found.
+          if (projectFile && typeof projectFile === 'string') { 
+            const expectedMissingProjectMessage = `The project file "${projectFile.replace(/\\/g, '\\\\')}" was not found`;
+            if (errOutput.includes(expectedMissingProjectMessage)) {
+              console.warn(`Temporary C# project file '${projectFile}' not found during build. C# analysis skipped.`);
+              return [];
+            }
+          }
+          // If tempProjPath was undefined, not a string, or the specific message wasn't found, proceed to parse general build errors.
+          // If build fails for other reasons, parse the error output
+          return this.parseLintOutput(errOutput, line => {
             const match = line.match(/(.+)\((\d+),(\d+)\):\s*(error|warning|info)\s+([^:]+):\s*(.+)/i);
             if (match) {
               return {
@@ -273,6 +292,11 @@ class CSharpAnalyzer extends CodeAnalyzer {
         }
         
       } catch (error) {
+        // Check if dotnet command itself failed to run (e.g., not installed) during setup or initial execSync
+        if (error.code === 'ENOENT' || /command not found|not recognized/i.test(error.message) || /is not recognized as an internal or external command/i.test(error.message)) {
+          console.warn('dotnet command not found or failed to execute during C# analysis setup. C# analysis skipped.');
+          return []; // Return empty array if dotnet is not available
+        }
         console.error('Error in C# analysis:', error);
         return [{
           ruleId: 'analysis-error',
@@ -282,10 +306,12 @@ class CSharpAnalyzer extends CodeAnalyzer {
           severity: 2,
         }];
       } finally {
-        // Clean up all temporary files
-        this.cleanUp(tempFile);
-        if (projectFile && fs.existsSync(projectFile)) {
-          fs.unlinkSync(projectFile);
+        // Ensure tempFile and projectFile are cleaned up if they were created
+        if (tempFile) {
+          this.cleanUp(tempFile);
+        }
+        if (projectFile && fs.existsSync(projectFile)) { // Check existence before cleaning
+          this.cleanUp(projectFile); // Also cleanup the .csproj
         }
         // Clean up bin and obj directories if they were created
         const binDir = path.join(tempDir, 'bin');
