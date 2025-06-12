@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <Container sx={{ mt: 4 }}>
+      <Container component="main" sx={{ mt: 4 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

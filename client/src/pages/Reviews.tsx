@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, List, ListItem, ListItemText, Divider, ListItemButton } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
-import { getReviews } from '../services/review.service';
+import { getReviews } from '@/services/review.service';
 import { useAuth } from '../context/AuthContext';
 
 const Reviews: React.FC = () => {
@@ -10,7 +10,9 @@ const Reviews: React.FC = () => {
 
   useEffect(() => {
     if (!loading) {
-      getReviews().then(res => setReviews(res.data)).catch(console.error);
+      Promise.resolve(getReviews())
+        .then(res => setReviews(res?.data || []))
+        .catch(console.error);
     }
   }, [loading]);
 

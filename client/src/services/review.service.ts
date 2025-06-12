@@ -1,4 +1,4 @@
-import api from './api';
+import api from '@/services/api';
 
 export interface Review {
   _id: string;
@@ -31,9 +31,7 @@ export interface Review {
 }
 
 export const getReviews = (): Promise<{ data: Review[] }> => api.get('/reviews');
-
 export const getReview = (id: string): Promise<{ data: Review }> => api.get(`/reviews/${id}`);
-
 export const createReview = async (
   data: {
     title: string;
