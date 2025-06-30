@@ -1,3 +1,4 @@
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import {
@@ -10,8 +11,16 @@ import {
   ListItem,
   ListItemText,
   Divider,
+  Table,
+  TableBody,
+  TableRow,
+  TableCell,
+  Tooltip,
 } from '@mui/material';
 import Editor from '@monaco-editor/react';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import SecurityIcon from '@mui/icons-material/Security';
+import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import { getReview } from '../services/review.service';
 import { getComments, createComment } from '../services/comment.service';
 import { useSocket } from '../context/SocketContext';
@@ -80,6 +89,85 @@ const ReviewDetail: React.FC = () => {
           options={{ readOnly: true, minimap: { enabled: false } }}
         />
       </Box>
+
+      <Divider sx={{ my: 3 }} />
+
+      {/* Performance Metrics Section */}
+      {review.metrics && (
+        <Box sx={{ mb: 3, p: 2, bgcolor: '#f8fafc', borderRadius: 2 }}>
+          <Typography variant="h6" gutterBottom>
+            <InfoOutlinedIcon sx={{ mr: 1, verticalAlign: 'middle', color: 'primary.main' }} />
+            Performance Metrics
+          </Typography>
+          <Table size="small" sx={{ maxWidth: 500 }}>
+            <TableBody>
+              <TableRow>
+                <TableCell>
+                  <Tooltip title="Total elapsed time for analysis (ms)">
+                    <span><b>Analysis Time</b></span>
+                  </Tooltip>
+                </TableCell>
+                <TableCell>{review.metrics.analysisTimeMs ?? 'N/A'}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Tooltip title="CPU time spent in user mode (microseconds)">
+                    <span><b>User CPU Time</b></span>
+                  </Tooltip>
+                </TableCell>
+                <TableCell>{review.metrics.cpuUserMicros ?? 'N/A'}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Tooltip title="CPU time spent in system/kernel mode (microseconds)">
+                    <span><b>System CPU Time</b></span>
+                  </Tooltip>
+                </TableCell>
+                <TableCell>{review.metrics.cpuSystemMicros ?? 'N/A'}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Tooltip title="Peak memory usage during analysis (KB)">
+                    <span><b>Peak Memory</b></span>
+                  </Tooltip>
+                </TableCell>
+                <TableCell>{review.metrics.memoryKb ?? 'N/A'}</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </Box>
+      )}
+
+      <Divider sx={{ my: 3 }} />
+
+      {/* Security Issues Section */}
+      {review.issues && review.issues.filter((i: { ruleId: string; }) => i.ruleId && i.ruleId.startsWith('security-')).length > 0 && (
+        <Box sx={{ mb: 3, p: 2, bgcolor: '#fff3e0', borderRadius: 2 }}>
+          <Typography variant="h6" gutterBottom color="error">
+            <WarningAmberIcon sx={{ mr: 1, verticalAlign: 'middle', color: 'error.main' }} />
+            Security Issues Detected
+          </Typography>
+          <List>
+            {review.issues
+              .filter((i: { ruleId: string; }) => i.ruleId && i.ruleId.startsWith('security-'))
+              .map((issue: { ruleId: string; line: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; message: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; }, idx: React.Key | null | undefined) => (
+                <ListItem key={idx} sx={{ mb: 1, borderRadius: 1, alignItems: 'flex-start' }}>
+                  <ListItemText
+                    primary={
+                      <span style={{ fontWeight: 'bold', color: '#b71c1c' }}>
+                        {issue.ruleId.replace('security-', '')} (Line {issue.line})
+                      </span>
+                    }
+                    secondary={issue.message}
+                  />
+                </ListItem>
+              ))}
+          </List>
+        </Box>
+      )}
+
+      <Divider sx={{ my: 3 }} />
+
       <Typography variant="h5" gutterBottom>
         Comments
       </Typography>
@@ -100,19 +188,41 @@ const ReviewDetail: React.FC = () => {
         <Box sx={{ mt: 2 }}>
           <TextField
             label="Add a comment"
+            fullWidth
             multiline
             rows={3}
-            fullWidth
             value={newComment}
-            onChange={e => setNewComment(e.target.value)}
+            onChange={(e) => setNewComment(e.target.value)}
+            variant="outlined"
+            margin="normal"
           />
           <Button
             variant="contained"
-            sx={{ mt: 1 }}
+            color="primary"
             onClick={handleCommentSubmit}
+            sx={{ mt: 1 }}
           >
-            Submit
+            Post Comment
           </Button>
+        </Box>
+      )}
+      {/* AI Suggestions Section */}
+      {review.aiSuggestions && (
+        <Box sx={{ mb: 3, p: 2, bgcolor: '#e8f5e9', borderRadius: 2 }}>
+          <Typography variant="h6" gutterBottom>
+            <AutoFixHighIcon sx={{ mr: 1, verticalAlign: 'middle', color: 'success.main' }} />
+            AI-Powered Suggestions
+          </Typography>
+          <Box sx={{ 
+            whiteSpace: 'pre-wrap',
+            fontFamily: 'monospace',
+            bgcolor: 'background.paper',
+            p: 2,
+            borderRadius: 1,
+            border: '1px solid #e0e0e0'
+          }}>
+            {review.aiSuggestions}
+          </Box>
         </Box>
       )}
     </Container>

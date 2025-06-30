@@ -316,210 +316,223 @@ const CodeSubmissionForm: React.FC = () => {
   }, []);
 
   return (
-    <Paper elevation={3} sx={{ p: 3, mt: 4 }}>
-      <Typography variant="h5" gutterBottom>
-        Submit Code for Review
-      </Typography>
-      
-      <Box component="form" onSubmit={handleSubmit}>
-        <Stack spacing={3}>
-          <TextField
-            label="Title"
-            fullWidth
-            required
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            disabled={isSubmitting}
-          />
-          
-          <Box sx={{ display: 'flex', gap: 2, mb: 2, alignItems: 'center' }}>
-            <FormControl required disabled={isSubmitting} sx={{ minWidth: 200 }}>
-              <InputLabel>Language</InputLabel>
-              <Select
-                value={language}
-                label="Language"
-                onChange={(e) => setLanguage(e.target.value as Language)}
-              >
-                {Object.entries(languageConfigs).map(([value, { label }]) => (
-                  <MenuItem key={value} value={value}>
-                    {label}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-            
-            <input
-              type="file"
-              ref={fileInputRef}
-              onChange={handleFileUpload}
-              accept=".js,.ts,.jsx,.tsx,.py,.cs,.java,.c,.cpp,.h,.hpp"
-              style={{ display: 'none' }}
-            />
-            <Button
-              variant="outlined"
-              startIcon={<UploadIcon />}
-              onClick={handleUploadClick}
+    <>
+      <Paper elevation={3} sx={{ p: 3, mt: 4 }}>
+        <Typography variant="h5" gutterBottom>
+          Submit Code for Review
+        </Typography>
+        
+        <Box component="form" onSubmit={handleSubmit}>
+          <Stack spacing={3}>
+            <TextField
+              label="Title"
+              fullWidth
+              required
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
               disabled={isSubmitting}
-              sx={{ minWidth: '150px' }}
-            >
-              Upload File
-            </Button>
-            {fileName && (
-              <Typography variant="body2" sx={{ color: 'text.secondary', ml: 1 }}>
-                {fileName}
-              </Typography>
-            )}
-          </Box>
-          
-          <Box sx={{ border: '1px solid #ddd', borderRadius: 1, overflow: 'hidden' }}>
-            <Box sx={{ bgcolor: '#f5f5f5', p: 1, borderBottom: '1px solid #ddd' }}>
-              <Typography variant="caption" color="text.secondary">
-                {languageConfigs[language]?.label || 'Code'}
-              </Typography>
-            </Box>
-            <Box sx={{ height: '400px' }}>
-              <Editor
-                height="100%"
-                defaultLanguage={language}
-                language={language}
-                theme="vs-light"
-                value={code}
-                onChange={handleEditorChange}
-                onMount={handleEditorDidMount}
-                options={{
-                  minimap: { enabled: false },
-                  scrollBeyondLastLine: false,
-                  fontSize: 14,
-                  wordWrap: 'on',
-                  automaticLayout: true,
-                }}
+            />
+            
+            <Box sx={{ display: 'flex', gap: 2, mb: 2, alignItems: 'center' }}>
+              <FormControl required disabled={isSubmitting} sx={{ minWidth: 200 }}>
+                <InputLabel>Language</InputLabel>
+                <Select
+                  value={language}
+                  label="Language"
+                  onChange={(e) => setLanguage(e.target.value as Language)}
+                >
+                  {Object.entries(languageConfigs).map(([value, { label }]) => (
+                    <MenuItem key={value} value={value}>
+                      {label}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              
+              <input
+                type="file"
+                ref={fileInputRef}
+                onChange={handleFileUpload}
+                accept=".js,.ts,.jsx,.tsx,.py,.cs,.java,.c,.cpp,.h,.hpp"
+                style={{ display: 'none' }}
               />
+              <Button
+                variant="outlined"
+                startIcon={<UploadIcon />}
+                onClick={handleUploadClick}
+                disabled={isSubmitting}
+                sx={{ minWidth: '150px' }}
+              >
+                Upload File
+              </Button>
+              {fileName && (
+                <Typography variant="body2" sx={{ color: 'text.secondary', ml: 1 }}>
+                  {fileName}
+                </Typography>
+              )}
             </Box>
-          </Box>
-          
-          <Box sx={{ mt: 3 }}>
-            {/* Analysis Controls */}
-            <Box sx={{ 
-              display: 'flex', 
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              mb: 2,
-              flexWrap: 'wrap',
-              gap: 2
-            }}>
-              <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+            
+            <Box sx={{ border: '1px solid #ddd', borderRadius: 1, overflow: 'hidden' }}>
+              <Box sx={{ bgcolor: '#f5f5f5', p: 1, borderBottom: '1px solid #ddd' }}>
+                <Typography variant="caption" color="text.secondary">
+                  {languageConfigs[language]?.label || 'Code'}
+                </Typography>
+              </Box>
+              <Box sx={{ height: '400px' }}>
+                <Editor
+                  data-testid="monaco-editor"
+                  height="400px"
+                  language={language}
+                  value={code}
+                  onChange={handleEditorChange}
+                  onMount={handleEditorDidMount}
+                  options={{ minimap: { enabled: false } }}
+                />
+              </Box>
+            </Box>
+            
+            <Box sx={{ mt: 3 }}>
+              {/* Analysis Controls */}
+              <Box sx={{ 
+                display: 'flex', 
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                mb: 2,
+                flexWrap: 'wrap',
+                gap: 2
+              }}>
+                <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+                  <Button 
+                    variant="outlined" 
+                    color="primary" 
+                    onClick={analyzeCodeHandler}
+                    disabled={isAnalyzing || isSubmitting}
+                    startIcon={
+                      isAnalyzing ? (
+                        <CircularProgress size={20} color="inherit" />
+                      ) : (
+                        <AssessmentIcon fontSize="small" />
+                      )
+                    }
+                    sx={{ minWidth: 160 }}
+                  >
+                    {isAnalyzing ? 'Analyzing...' : 'Analyze Code'}
+                  </Button>
+                  
+                  {analysisError && (
+                    <Alert 
+                      severity="error" 
+                      sx={{ 
+                        flex: 1,
+                        '& .MuiAlert-message': { 
+                          display: 'flex', 
+                          alignItems: 'center'
+                        }
+                      }}
+                    >
+                      <Box>
+                        <Typography variant="body2">
+                          {analysisError}
+                        </Typography>
+                        <Button 
+                          color="inherit" 
+                          size="small" 
+                          onClick={analyzeCodeHandler}
+                          disabled={isAnalyzing}
+                          sx={{ mt: 0.5 }}
+                        >
+                          Retry
+                        </Button>
+                      </Box>
+                    </Alert>
+                  )}
+                </Box>
+                
                 <Button 
-                  variant="outlined" 
+                  type="submit" 
+                  variant="contained" 
                   color="primary" 
-                  onClick={analyzeCodeHandler}
-                  disabled={isAnalyzing || isSubmitting}
-                  startIcon={
-                    isAnalyzing ? (
-                      <CircularProgress size={20} color="inherit" />
-                    ) : (
-                      <AssessmentIcon fontSize="small" />
-                    )
-                  }
+                  disabled={isSubmitting || isAnalyzing}
+                  startIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : null}
                   sx={{ minWidth: 160 }}
                 >
-                  {isAnalyzing ? 'Analyzing...' : 'Analyze Code'}
+                  {isSubmitting ? 'Submitting...' : 'Submit Code'}
                 </Button>
-                
-                {analysisError && (
-                  <Alert 
-                    severity="error" 
-                    sx={{ 
-                      flex: 1,
-                      '& .MuiAlert-message': { 
-                        display: 'flex', 
-                        alignItems: 'center'
-                      }
-                    }}
-                  >
-                    <Box>
-                      <Typography variant="body2">
-                        {analysisError}
-                      </Typography>
-                      <Button 
-                        color="inherit" 
-                        size="small" 
-                        onClick={analyzeCodeHandler}
-                        disabled={isAnalyzing}
-                        sx={{ mt: 0.5 }}
-                      >
-                        Retry
-                      </Button>
-                    </Box>
-                  </Alert>
-                )}
               </Box>
               
-              <Button 
-                type="submit" 
-                variant="contained" 
-                color="primary" 
-                disabled={isSubmitting || isAnalyzing}
-                startIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : null}
-                sx={{ minWidth: 160 }}
-              >
-                {isSubmitting ? 'Submitting...' : 'Submit Code'}
-              </Button>
+              {/* Analysis Results */}
+              <Box sx={{ mt: 2 }}>
+                <CodeAnalysisResults
+                  result={analysisResult}
+                  show={showAnalysis}
+                  loading={isAnalyzing}
+                  error={analysisError}
+                  onToggle={() => setShowAnalysis(!showAnalysis)}
+                  onRetry={analyzeCodeHandler}
+                />
+              </Box>
             </Box>
-            
-            {/* Analysis Results */}
-            <Box sx={{ mt: 2 }}>
-              <CodeAnalysisResults
-                result={analysisResult}
-                show={showAnalysis}
-                loading={isAnalyzing}
-                error={analysisError}
-                onToggle={() => setShowAnalysis(!showAnalysis)}
-                onRetry={analyzeCodeHandler}
-              />
-            </Box>
-          </Box>
-        </Stack>
-      </Box>
+          </Stack>
+        </Box>
 
-      <Snackbar
-        open={!!submitError}
-        autoHideDuration={6000}
-        onClose={() => setSubmitError('')}
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      >
-        <Alert 
-          onClose={() => setSubmitError('')} 
-          severity="error" 
-          sx={{ width: '100%' }}
-          action={
-            <Button 
-              color="inherit" 
-              size="small" 
-              onClick={() => {
-                setSubmitError('');
-                handleSubmit({ preventDefault: () => {} } as React.FormEvent);
-              }}
-            >
-              Retry
-            </Button>
-          }
+        <Snackbar
+          open={!!submitError}
+          autoHideDuration={6000}
+          onClose={() => setSubmitError('')}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
         >
-          {submitError}
-        </Alert>
-      </Snackbar>
+          <Alert 
+            onClose={() => setSubmitError('')} 
+            severity="error" 
+            sx={{ width: '100%' }}
+            action={
+              <Button 
+                color="inherit" 
+                size="small" 
+                onClick={() => {
+                  setSubmitError('');
+                  handleSubmit({ preventDefault: () => {} } as React.FormEvent);
+                }}
+              >
+                Retry
+              </Button>
+            }
+          >
+            {submitError}
+          </Alert>
+        </Snackbar>
 
-      <Snackbar
-        open={success}
-        autoHideDuration={5000}
-        onClose={() => setSuccess(false)}
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      >
-        <Alert onClose={() => setSuccess(false)} severity="success" sx={{ width: '100%' }}>
-          Code submitted successfully for review!
-        </Alert>
-      </Snackbar>
-    </Paper>
+        <Snackbar
+          open={success}
+          autoHideDuration={5000}
+          onClose={() => setSuccess(false)}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        >
+          <Alert onClose={() => setSuccess(false)} severity="success" sx={{ width: '100%' }}>
+            Code submitted successfully for review!
+          </Alert>
+        </Snackbar>
+      </Paper>
+
+      <Dialog open={loginDialogOpen} onClose={handleCloseDialog} aria-labelledby="login-dialog-title" role="dialog">
+        <DialogTitle id="login-dialog-title">Login Required</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Please log in to submit code.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleLoginClick} color="primary" autoFocus>
+            Sign In
+          </Button>
+          <Button onClick={handleCloseDialog} color="secondary">
+            Cancel
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
+
 };
 
 export default CodeSubmissionForm;

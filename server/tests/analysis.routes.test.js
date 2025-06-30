@@ -3,7 +3,9 @@ const { StatusCodes } = require('http-status-codes');
 const jwt = require('jsonwebtoken');
 const { setupTestDB, clearTestDB, closeTestDB, getAuthToken } = require('./testHelpers');
 const Analysis = require('../models/Analysis');
-
+jest.mock('../services/aiAnalysis.service', () => ({
+  getCodeSuggestions: jest.fn().mockResolvedValue('Test suggestion')
+}));
 jest.mock('../utils/codeAnalyzer', () => ({
   analyzeCode: jest.fn().mockResolvedValue([
     { ruleId: 'no-var', message: 'Use let', line: 1, column: 1, severity: 1 },

@@ -1,7 +1,7 @@
-import api from '@/services/api';
-import { analyzeCode, getAnalysisHistory, AnalysisResult, AnalysisHistoryItem } from '@/services/analysis.service';
+import api from '../services/api';
+import { analyzeCode, getAnalysisHistory, AnalysisResult, AnalysisHistoryItem } from '../services/analysis.service';
 
-jest.mock('@/services/api');
+jest.mock('../services/api');
 const mockedApi = api as jest.Mocked<typeof api>;
 
 describe('analysis.service', () => {

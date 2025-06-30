@@ -50,6 +50,16 @@ class CodeAnalyzer {
       .map(lineParser)
       .filter(issue => issue);
   }
+
+  createDependencyMissingIssue(toolName) {
+    return [{
+      ruleId: 'dependency-missing',
+      message: `Required dependency "${toolName}" is not installed or not found in PATH. Please install it and retry the analysis.`,
+      line: 1,
+      column: 1,
+      severity: 2,
+    }];
+  }
 }
 
 /**
@@ -183,6 +193,9 @@ class PythonAnalyzer extends CodeAnalyzer {
             return null;
           });
         }
+        if (error.code === 'ENOENT' || /not (?:found|recognized)/i.test(error.message || '')) {
+          return this.createDependencyMissingIssue('pylint');
+        }
         throw error;
       } finally {
         this.cleanUp(tempFile);
@@ -297,6 +310,9 @@ class CSharpAnalyzer extends CodeAnalyzer {
           console.warn('dotnet command not found or failed to execute during C# analysis setup. C# analysis skipped.');
           return []; // Return empty array if dotnet is not available
         }
+        if (error.code === 'ENOENT' || /not (?:found|recognized)/i.test(error.message || '')) {
+          return this.createDependencyMissingIssue('dotnet');
+        }
         console.error('Error in C# analysis:', error);
         return [{
           ruleId: 'analysis-error',
@@ -360,6 +376,18 @@ class JavaAnalyzer extends CodeAnalyzer {
           }
           return null;
         });
+      } catch (error) {
+        if (error.code === 'ENOENT' || /not (?:found|recognized)/i.test(error.message || '')) {
+          return this.createDependencyMissingIssue('javac');
+        }
+        console.error('Error in Java analysis:', error);
+        return [{
+          ruleId: 'analysis-error',
+          message: `Failed to analyze Java code: ${error.message || 'Unknown error'}`,
+          line: 1,
+          column: 1,
+          severity: 2,
+        }];
       } finally {
         this.cleanUp(tempFile);
         // Clean up .class file if it was created
@@ -408,6 +436,18 @@ class CppAnalyzer extends CodeAnalyzer {
           }
           return null;
         });
+      } catch (error) {
+        if (error.code === 'ENOENT' || /not (?:found|recognized)/i.test(error.message || '')) {
+          return this.createDependencyMissingIssue('cppcheck');
+        }
+        console.error(`Error in ${isCpp ? 'C++' : 'C'} analysis:`, error);
+        return [{
+          ruleId: 'analysis-error',
+          message: `Failed to analyze ${isCpp ? 'C++' : 'C'} code: ${error.message || 'Unknown error'}`,
+          line: 1,
+          column: 1,
+          severity: 2,
+        }];
       } finally {
         this.cleanUp(tempFile);
       }

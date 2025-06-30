@@ -180,10 +180,10 @@ describe('analyzeCode helper alias support and error handling', () => {
     const issues = await analyzeCode('class Foo {}', 'java');
     expect(issues).toEqual([
       expect.objectContaining({
-        ruleId: 'analysis-error',
-        message: expect.stringContaining('Failed to analyze Java code'),
+        ruleId: 'dependency-missing',
+        message: expect.stringContaining('Required dependency "javac" is not installed'),
         severity: 2,
-      })
+      }),
     ]);
     
     // Restore original execSync
@@ -191,8 +191,21 @@ describe('analyzeCode helper alias support and error handling', () => {
   });
 
   it('returns empty array for C# analyzer when dotnet is not available', async () => {
-    const issues = await analyzeCode('public class C {}', 'cs');
-    expect(issues).toEqual([]);
+    const originalExecSync = cp.execSync;
+    try {
+      // Mock execSync to simulate dotnet not being found
+      cp.execSync = jest.fn().mockImplementation(() => {
+        const error = new Error('dotnet command not found');
+        error.code = 'ENOENT';
+        throw error;
+      });
+      
+      const issues = await analyzeCode('public class C {}', 'cs');
+      expect(issues).toEqual([]);
+    } finally {
+      // Restore original execSync
+      cp.execSync = originalExecSync;
+    }
   });
 
   it('returns empty for blank python code via py alias', async () => {
@@ -214,10 +227,10 @@ describe('PythonAnalyzer and CppAnalyzer fallback cases', () => {
     const issues = await analyzeCode('def foo:', 'python');
     expect(issues).toEqual([
       expect.objectContaining({
-        ruleId: 'analysis-error',
-        message: expect.stringContaining('Failed to analyze Python code'),
+        ruleId: 'dependency-missing',
+        message: expect.stringContaining('Required dependency "pylint" is not installed'),
         severity: 2,
-      })
+      }),
     ]);
     
     // Restore original execSync
@@ -236,10 +249,10 @@ describe('PythonAnalyzer and CppAnalyzer fallback cases', () => {
     const issues = await analyzeCode('int main()', 'c');
     expect(issues).toEqual([
       expect.objectContaining({
-        ruleId: 'analysis-error',
-        message: expect.stringContaining('Failed to analyze C code'),
+        ruleId: 'dependency-missing',
+        message: expect.stringContaining('Required dependency "cppcheck" is not installed'),
         severity: 2,
-      })
+      }),
     ]);
     
     // Restore original execSync
@@ -258,10 +271,10 @@ describe('PythonAnalyzer and CppAnalyzer fallback cases', () => {
     const issues = await analyzeCode('int main()', 'c++');
     expect(issues).toEqual([
       expect.objectContaining({
-        ruleId: 'analysis-error',
-        message: expect.stringContaining('Failed to analyze C++ code'),
+        ruleId: 'dependency-missing',
+        message: expect.stringContaining('Required dependency "cppcheck" is not installed'),
         severity: 2,
-      })
+      }),
     ]);
     
     // Restore original execSync
@@ -350,10 +363,10 @@ describe('C++ alias fallback', () => {
     const issues = await analyzeCode('int main()', 'cpp');
     expect(issues).toEqual([
       expect.objectContaining({
-        ruleId: 'analysis-error',
-        message: expect.stringContaining('Failed to analyze C++ code'),
+        ruleId: 'dependency-missing',
+        message: expect.stringContaining('Required dependency "cppcheck" is not installed'),
         severity: 2,
-      })
+      }),
     ]);
     
     // Restore original execSync
@@ -427,7 +440,13 @@ describe('JavaAnalyzer unit tests', () => {
   it('handles execSync error', async () => {
     jest.spyOn(cp, 'execSync').mockImplementation(() => { throw new Error('javac missing'); });
     const issues = await analyzer.analyze('class X {}');
-    expect(issues).toEqual([expect.objectContaining({ ruleId: 'analysis-error', severity: 2 })]);
+    expect(issues).toEqual([
+      expect.objectContaining({
+        ruleId: 'analysis-error',
+        message: expect.stringContaining('Failed to analyze Java code'),
+        severity: 2,
+      })
+    ]);
   });
 });
 
@@ -459,6 +478,12 @@ describe('CppAnalyzer unit tests', () => {
   it('handles execSync error', async () => {
     jest.spyOn(cp, 'execSync').mockImplementation(() => { throw new Error('cppcheck missing'); });
     const issues = await analyzer.analyze('int main()', true);
-    expect(issues).toEqual([expect.objectContaining({ ruleId: 'analysis-error', severity: 2 })]);
+    expect(issues).toEqual([
+      expect.objectContaining({
+        ruleId: 'analysis-error',
+        message: expect.stringContaining('Failed to analyze C++ code'),
+        severity: 2,
+      })
+    ]);
   });
 });

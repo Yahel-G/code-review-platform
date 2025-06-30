@@ -93,11 +93,14 @@ REACT_APP_API_URL=http://localhost:5000/api
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
+
+## Documentation
+
+- [API Endpoints](docs/API.md)
+- [Setup Instructions](docs/SETUP.md)
+- [Architecture Decisions](docs/ARCHITECTURE.md)
+- [Contribution Guidelines](CONTRIBUTING.md)
 
 ## License
 

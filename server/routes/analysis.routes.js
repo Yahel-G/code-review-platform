@@ -1,26 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const { protect } = require('../middlewares/auth');
-const { 
-  analyzeCode, 
-  getAnalysisHistory 
-} = require('../controllers/analysis.controller');
+const { aiLimiter } = require('../middlewares/rateLimit');
+const analysisController = require('../controllers/analysis.controller');
 
 // Protect all routes with authentication
 router.use(protect);
 
-/**
- * @route   POST /api/analyze
- * @desc    Analyze code and get feedback
- * @access  Private
- */
-router.post('/', analyzeCode);
+// POST /api/analyze  → this router is mounted at /api/analyze
+router.post('/', aiLimiter, analysisController.analyzeCode);
 
-/**
- * @route   GET /api/analysis/history
- * @desc    Get user's analysis history
- * @access  Private
- */
-router.get('/history', getAnalysisHistory);
+// GET /api/analyze/history
+router.get('/history', analysisController.getAnalysisHistory);
 
 module.exports = router;

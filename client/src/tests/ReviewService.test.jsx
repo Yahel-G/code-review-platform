@@ -1,8 +1,8 @@
-import { createReview, getReviews, getReview, updateReview, deleteReview } from '@/services/review.service';
-import api from '@/services/api'
+import { createReview, getReviews, getReview, updateReview, deleteReview } from '../services/review.service';
+import api from '../services/api';
 
 // Mock the API module
-jest.mock('@/services/api');
+jest.mock('../services/api');
 
 const mockToken = 'test-token-123';
 

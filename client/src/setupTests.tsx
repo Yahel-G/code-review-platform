@@ -1,6 +1,8 @@
 // src/setupTests.ts
 import '@testing-library/jest-dom';
 import 'whatwg-fetch';
+import './setupTests.monacomock';
+
 import React, { type ReactNode } from 'react';
 
 // Silence React Router future flag warnings
@@ -84,5 +86,3 @@ jest.mock('react-router-dom', () => {
     useLocation: () => mockUseLocation(),
   };
 });
-
-// Other setup mocks continue below

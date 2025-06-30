@@ -1,6 +1,10 @@
 const Analysis = require('../models/Analysis');
 const { analyzeCode } = require('../utils/codeAnalyzer');
 const { calculateCodeMetrics } = require('../utils/codeMetrics');
+const aiService = require('../services/aiAnalysis.service');
+const { scanSecurityIssues } = require('../utils/securityScanner');
+
+
 
 /**
  * @desc    Analyze code
@@ -16,14 +20,35 @@ exports.analyzeCode = async (req, res) => {
       return res.status(400).json({ message: 'Code is required' });
     }
 
-    // Analyze code for issues
+    // Measure analysis time & resource usage
+    const t0 = Date.now();
+    const usageStart = process.resourceUsage();
+
     const issues = await analyzeCode(code, language);
-    
+
+    const analysisTimeMs = Date.now() - t0;
+    const usageEnd = process.resourceUsage();
+    const cpuUserMicros = usageEnd.userCPUTime - usageStart.userCPUTime;
+    const cpuSystemMicros = usageEnd.systemCPUTime - usageStart.systemCPUTime;
+    const memoryKb = usageEnd.maxRSS; // peak resident set size in KB
+
+    // Security scan and AI suggestions
+    const aiStart = Date.now();
+    const aiSuggestions = await aiService.getCodeSuggestions(code, language);
+    const aiTimeMs = Date.now() - aiStart;
+    const securityIssues = scanSecurityIssues(code, language);
+    const allIssues = [...issues, ...securityIssues];
+
     // Calculate code metrics
     const metrics = calculateCodeMetrics(code);
-    
+    metrics.analysisTimeMs = analysisTimeMs;
+    metrics.aiTimeMs = aiTimeMs;
+    metrics.cpuUserMicros = cpuUserMicros;
+    metrics.cpuSystemMicros = cpuSystemMicros;
+    metrics.memoryKb = memoryKb;
+
     // Generate suggestions based on analysis
-    const suggestions = generateSuggestions(issues, metrics);
+    const suggestions = generateSuggestions(allIssues, metrics);
 
     // Save analysis result (only if user is authenticated)
     if (userId) {
@@ -31,7 +56,7 @@ exports.analyzeCode = async (req, res) => {
         const analysis = new Analysis({
           user: userId,
           language,
-          issues,
+          issues: allIssues,
           metrics,
           codeSnippet: code.substring(0, 1000), // Store a preview of the code
         });
@@ -43,14 +68,15 @@ exports.analyzeCode = async (req, res) => {
     }
 
     res.status(200).json({
-      issues,
+      issues: allIssues,
       metrics,
       suggestions,
+      aiSuggestions
     });
   } catch (error) {
     console.error('Analysis error:', error);
     res.status(500).json({ 
-      message: 'Server error during code analysis',
+      message: 'Server error during code analysis: ' + error.message,
       error: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
   }

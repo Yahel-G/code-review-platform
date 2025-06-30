@@ -1,11 +1,11 @@
 import api from './api';
 
 export interface CodeIssue {
-  ruleId: string;
+  ruleId?: string;
   severity: 1 | 2; // 1: warning, 2: error
   message: string;
-  line: number;
-  column: number;
+  line?: number;
+  column?: number;
 }
 
 export interface CodeMetrics {
@@ -16,8 +16,8 @@ export interface CodeMetrics {
 
 export interface AnalysisResult {
   issues: CodeIssue[];
-  metrics: CodeMetrics;
-  suggestions: string[];
+  metrics?: CodeMetrics;
+  suggestions?: string[];
 }
 
 export interface AnalysisHistoryItem {

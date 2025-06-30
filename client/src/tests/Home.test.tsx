@@ -22,6 +22,8 @@ jest.mock('../context/AuthContext', () => {
   };
 });
 
+import { act } from 'react';
+
 describe('Home page', () => {
   beforeEach(() => {
     (useAuth as jest.Mock).mockReturnValue({
@@ -30,15 +32,23 @@ describe('Home page', () => {
     });
   });
 
-  test('renders tabs and switches panel', () => {
-    render(<Home />);
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  test('renders tabs and switches panel', async () => {
+    await act(async () => {
+      render(<Home />);
+    });
 
     // Verify initial tab
     expect(screen.getByRole('tabpanel')).toBeInTheDocument();
     expect(screen.getByText(/Recent Code Reviews/i)).toBeInTheDocument();
 
     // Switch to Submit Code tab
-    fireEvent.click(screen.getByRole('tab', { name: /Submit Code/i }));
+    await act(async () => {
+      fireEvent.click(screen.getByRole('tab', { name: /Submit Code/i }));
+    });
     expect(screen.getByRole('tab', { name: /Submit Code/i })).toHaveAttribute('aria-selected', 'true');
   });
 });

@@ -75,6 +75,9 @@ const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({
     return null;
   }
 
+  // Defensive: Provide default metrics if undefined
+  const metrics = result.metrics ?? { complexity: 0, maintainability: 0, linesOfCode: 0 };
+
   const hasIssues = result.issues.length > 0;
   const errorCount = result.issues.filter(issue => issue.severity === 2).length;
   const warningCount = result.issues.filter(issue => issue.severity === 1).length;
@@ -229,8 +232,8 @@ const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({
             <Box display="flex" gap={2} flexWrap="wrap">
               <Tooltip title="Cyclomatic complexity measures the number of linearly independent paths through a program's source code">
                 <Chip
-                  label={`Complexity: ${result.metrics.complexity.toFixed(1)}`}
-                  color={result.metrics.complexity > 10 ? 'error' : 'default'}
+                  label={`Complexity: ${metrics.complexity.toFixed(1)}`}
+                  color={metrics.complexity > 10 ? 'error' : 'default'}
                   variant="outlined"
                   sx={{ 
                     bgcolor: 'background.paper',
@@ -259,22 +262,22 @@ const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({
                       sx={{ 
                         fontWeight: 500,
                         color: 
-                          result.metrics.maintainability < 50 
+                          metrics.maintainability < 50 
                             ? theme.palette.error.main 
-                            : result.metrics.maintainability < 70 
+                            : metrics.maintainability < 70 
                             ? theme.palette.warning.dark 
                             : theme.palette.success.dark
                       }}
                     >
-                      {`${Math.round(result.metrics.maintainability)}`}
+                      {`${Math.round(metrics.maintainability)}`}
                     </Typography>
                   </Box>
                   <CircularProgressWithLabel 
-                    value={result.metrics.maintainability} 
+                    value={metrics.maintainability} 
                     color={
-                      result.metrics.maintainability < 50
+                      metrics.maintainability < 50
                         ? 'error'
-                        : result.metrics.maintainability < 70
+                        : metrics.maintainability < 70
                         ? 'warning'
                         : 'success'
                     }
@@ -286,7 +289,8 @@ const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({
               
               <Tooltip title="Total number of lines of code">
                 <Chip
-                  label={`${result.metrics.linesOfCode} lines`}
+                  label={`Lines of Code: ${metrics.linesOfCode}`}
+                  color="info"
                   variant="outlined"
                   sx={{ 
                     bgcolor: 'background.paper',
@@ -332,7 +336,7 @@ const CodeAnalysisResults: React.FC<CodeAnalysisResultsProps> = ({
                   },
                 }}
               >
-                {result.suggestions.map((suggestion, i) => (
+                {result.suggestions?.map((suggestion, i) => (
                   <li key={i}>
                     <Typography variant="body2">
                       {suggestion}

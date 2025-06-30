@@ -2,7 +2,7 @@ import React from 'react';
 import { screen, waitFor } from '@testing-library/react';
 import { render } from './test-utils';
 import App from '../App';
-import * as reviewService from '@/services/review.service';
+import * as reviewService from '../services/review.service';
 import { mockNavigate } from '../setupTests';
 
 // Mock the ReviewDetail component
@@ -12,8 +12,8 @@ jest.mock('../pages/ReviewDetail', () => ({
 }));
 
 // Partial mock of review.service with default resolved getReviews
-jest.mock('@/services/review.service', () => {
-  const actual = jest.requireActual('@/services/review.service');
+jest.mock('../services/review.service', () => {
+  const actual = jest.requireActual('../services/review.service');
   return {
     __esModule: true,
     ...actual,
@@ -30,7 +30,7 @@ describe('App Component', () => {
 
   test('renders CodeReview header and handles initial load', async () => {
     render(<App />, { initialEntries: ['/'] });
-    const header = screen.getByText(/CodeReview/i);
+    const header = await screen.findByText(/CodeReview/i);
     expect(header).toBeInTheDocument();
 
     // Wait for any potential async operations triggered on app load
@@ -55,7 +55,7 @@ describe('App Component', () => {
 
     // Example: Check if the review title is displayed
     // This depends on your Reviews.tsx component's rendering logic
-    // await screen.findByText('Test Review'); // if it displays titles
+    await screen.findByText('Test Review'); // ensure the review title is rendered and act-wrapped
   });
 });
 
