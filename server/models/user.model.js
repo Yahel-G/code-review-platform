@@ -123,8 +123,9 @@ userSchema.pre('save', async function (next) {
   if (!this.isModified('password')) return next();
 
   try {
-    // Hash the password with cost of 12
-    this.password = await bcrypt.hash(this.password, 12);
+    // Hash the password with a configurable cost (default 10)
+    const saltRounds = parseInt(process.env.BCRYPT_COST || '10', 10);
+    this.password = await bcrypt.hash(this.password, saltRounds);
     next();
   } catch (error) {
     next(error);
