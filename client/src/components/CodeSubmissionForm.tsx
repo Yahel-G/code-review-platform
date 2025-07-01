@@ -290,7 +290,7 @@ const CodeSubmissionForm: React.FC = () => {
       setShowAnalysis(false);
       
       // Redirect to the review page
-      navigate(`/review/${response.data._id}`);
+      navigate(`/reviews/${response.data._id}`);
     } catch (error) {
       console.error('Submission error:', error);
       const err = error as AxiosError<{ message?: string }>;
