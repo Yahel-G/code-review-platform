@@ -30,7 +30,7 @@ exports.getReviewById = async (req, res, next) => {
 // POST /api/reviews
 exports.createReview = async (req, res, next) => {
   try {
-    const userId = req.user.id;
+    const { id: userId, role } = req.user;
     const { title, code, language, analysis } = req.body;
     const review = new Review({ title, code, language, analysis, author: userId });
     await review.save();
@@ -44,12 +44,12 @@ exports.createReview = async (req, res, next) => {
 // PUT /api/reviews/:id
 exports.updateReview = async (req, res, next) => {
   try {
-    const userId = req.user.id;
+    const { id: userId, role } = req.user;
     const review = await Review.findById(req.params.id);
     if (!review) {
       throw new ApiError(StatusCodes.NOT_FOUND, 'Review not found');
     }
-    if (review.author.toString() !== userId) {
+    if (review.author.toString() !== userId && role !== 'admin') {
       throw new ApiError(StatusCodes.FORBIDDEN, 'Not authorized to update this review');
     }
     Object.assign(review, req.body);
@@ -64,12 +64,12 @@ exports.updateReview = async (req, res, next) => {
 // DELETE /api/reviews/:id
 exports.deleteReview = async (req, res, next) => {
   try {
-    const userId = req.user.id;
+    const { id: userId, role } = req.user;
     const review = await Review.findById(req.params.id);
     if (!review) {
       throw new ApiError(StatusCodes.NOT_FOUND, 'Review not found');
     }
-    if (review.author.toString() !== userId) {
+    if (review.author.toString() !== userId && role !== 'admin') {
       throw new ApiError(StatusCodes.FORBIDDEN, 'Not authorized to delete this review');
     }
     await Review.findByIdAndDelete(req.params.id);

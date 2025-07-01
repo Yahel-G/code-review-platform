@@ -15,11 +15,12 @@ exports.protect = async (req, res, next) => {
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     // Optionally load user details
+    // Load full user to access role
     const user = await User.findById(decoded.id);
     if (!user) {
       throw new ApiError(StatusCodes.UNAUTHORIZED, 'User not found');
     }
-    req.user = { id: user._id };
+    req.user = { id: user._id, role: user.role };
     next();
   } catch (err) {
     const message = err.name === 'TokenExpiredError'
